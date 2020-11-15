@@ -1,0 +1,10 @@
+vcom -93 -work ./work ../src2/my_ff.vhd
+vcom -93 -work ./work ../src2/reg_file.vhd
+vcom -93 -work ./work ../src2/IIR.vhd
+vcom -93 -work ./work ../src2/myiir.vhd
+vcom -93 -work ./work ../tb2/clk_gen.vhd
+vcom -93 -work ./work ../tb2/data_maker_new.vhd
+vcom -93 -work ./work ../tb2/data_sink.vhd
+vlog -work ./work ../tb2/tb_iir.v
+vsim work.tb_iir
+run 2052 ns

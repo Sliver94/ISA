@@ -1,0 +1,4 @@
+read_verilog -netlist ../netlist2/myiir.v
+read_saif -input ../saif2/myiir_syn.saif -instance tb_iir/UUT -unit ns -scale 1
+create_clock -name MY_CLK CLK
+report_power > report_power.txt

@@ -1,0 +1,95 @@
+Information: Updating design information... (UID-85)
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : myiir
+Version: O-2018.06-SP4
+Date   : Fri Oct 23 17:52:28 2020
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: a1[5] (input port clocked by MY_CLK)
+  Endpoint: reg_file2_inst/registers_reg[7]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  myiir              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 f
+  a1[5] (in)                                              0.00       0.50 f
+  iir_inst/a1[5] (IIR)                                    0.00       0.50 f
+  iir_inst/mult_54/b[5] (IIR_DW_mult_tc_6)                0.00       0.50 f
+  iir_inst/mult_54/U286/ZN (XNOR2_X1)                     0.17       0.67 r
+  iir_inst/mult_54/U426/ZN (NAND2_X1)                     0.10       0.78 f
+  iir_inst/mult_54/U460/ZN (OAI22_X1)                     0.08       0.86 r
+  iir_inst/mult_54/U149/S (HA_X1)                         0.10       0.97 r
+  iir_inst/mult_54/U317/ZN (XNOR2_X1)                     0.07       1.04 r
+  iir_inst/mult_54/U316/ZN (XNOR2_X1)                     0.07       1.11 r
+  iir_inst/mult_54/U447/ZN (NAND2_X1)                     0.05       1.15 f
+  iir_inst/mult_54/U502/ZN (OAI21_X1)                     0.05       1.21 r
+  iir_inst/mult_54/U329/ZN (AOI21_X1)                     0.03       1.23 f
+  iir_inst/mult_54/U344/ZN (INV_X1)                       0.05       1.29 r
+  iir_inst/mult_54/U439/ZN (XNOR2_X1)                     0.08       1.37 r
+  iir_inst/mult_54/product[9] (IIR_DW_mult_tc_6)          0.00       1.37 r
+  iir_inst/U76/ZN (INV_X1)                                0.03       1.40 f
+  iir_inst/U19/ZN (AND2_X1)                               0.05       1.45 f
+  iir_inst/U28/ZN (OR2_X1)                                0.06       1.50 f
+  iir_inst/U29/ZN (NAND3_X1)                              0.04       1.54 r
+  iir_inst/add_53/B[4] (IIR_DW01_add_5)                   0.00       1.54 r
+  iir_inst/add_53/U108/ZN (NAND2_X1)                      0.04       1.58 f
+  iir_inst/add_53/U115/ZN (OAI21_X1)                      0.05       1.63 r
+  iir_inst/add_53/U91/ZN (AOI21_X1)                       0.03       1.66 f
+  iir_inst/add_53/U123/ZN (OAI21_X1)                      0.04       1.70 r
+  iir_inst/add_53/U78/ZN (XNOR2_X1)                       0.07       1.78 r
+  iir_inst/add_53/SUM[7] (IIR_DW01_add_5)                 0.00       1.78 r
+  iir_inst/mult_55/a[7] (IIR_DW_mult_tc_9)                0.00       1.78 r
+  iir_inst/mult_55/U470/ZN (XNOR2_X1)                     0.07       1.85 r
+  iir_inst/mult_55/U460/ZN (OAI22_X1)                     0.04       1.89 f
+  iir_inst/mult_55/U96/S (FA_X1)                          0.14       2.03 r
+  iir_inst/mult_55/U95/S (FA_X1)                          0.12       2.15 f
+  iir_inst/mult_55/U324/ZN (NAND2_X1)                     0.04       2.19 r
+  iir_inst/mult_55/U306/ZN (OAI21_X1)                     0.04       2.23 f
+  iir_inst/mult_55/U457/ZN (AOI21_X1)                     0.04       2.27 r
+  iir_inst/mult_55/U464/ZN (OAI21_X1)                     0.04       2.31 f
+  iir_inst/mult_55/U445/ZN (XNOR2_X1)                     0.06       2.36 f
+  iir_inst/mult_55/product[13] (IIR_DW_mult_tc_9)         0.00       2.36 f
+  iir_inst/add_62/A[6] (IIR_DW01_add_6)                   0.00       2.36 f
+  iir_inst/add_62/U81/ZN (OR2_X1)                         0.06       2.43 f
+  iir_inst/add_62/U110/ZN (AOI21_X1)                      0.05       2.47 r
+  iir_inst/add_62/U113/ZN (OAI21_X1)                      0.04       2.51 f
+  iir_inst/add_62/U109/ZN (XNOR2_X1)                      0.05       2.57 f
+  iir_inst/add_62/SUM[7] (IIR_DW01_add_6)                 0.00       2.57 f
+  iir_inst/output[7] (IIR)                                0.00       2.57 f
+  reg_file2_inst/input[7] (reg_file_1)                    0.00       2.57 f
+  reg_file2_inst/U6/ZN (AOI22_X1)                         0.04       2.61 r
+  reg_file2_inst/U22/ZN (INV_X1)                          0.02       2.63 f
+  reg_file2_inst/registers_reg[7]/D (DFF_X1)              0.01       2.64 f
+  data arrival time                                                  2.64
+
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                      -0.07      -0.07
+  reg_file2_inst/registers_reg[7]/CK (DFF_X1)             0.00      -0.07 r
+  library setup time                                     -0.04      -0.11
+  data required time                                                -0.11
+  --------------------------------------------------------------------------
+  data required time                                                -0.11
+  data arrival time                                                 -2.64
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -2.75
+
+
+1

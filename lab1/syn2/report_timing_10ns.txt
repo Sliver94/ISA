@@ -1,0 +1,71 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : myiir
+Version: O-2018.06-SP4
+Date   : Tue Nov  3 09:35:10 2020
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: bn2[3] (input port clocked by MY_CLK)
+  Endpoint: iir_inst/ff21_reg[8]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  myiir              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 f
+  bn2[3] (in)                                             0.00       0.50 f
+  iir_inst/bn2[3] (IIR)                                   0.00       0.50 f
+  iir_inst/mult_87/b[3] (IIR_DW_mult_tc_0)                0.00       0.50 f
+  iir_inst/mult_87/U186/ZN (INV_X1)                       0.04       0.54 r
+  iir_inst/mult_87/U181/Z (XOR2_X1)                       0.19       0.73 r
+  iir_inst/mult_87/U238/ZN (NAND2_X1)                     0.11       0.84 f
+  iir_inst/mult_87/U195/ZN (OAI22_X1)                     0.08       0.92 r
+  iir_inst/mult_87/U39/S (HA_X1)                          0.08       1.00 r
+  iir_inst/mult_87/U38/S (FA_X1)                          0.12       1.12 f
+  iir_inst/mult_87/U271/ZN (AOI222_X1)                    0.13       1.25 r
+  iir_inst/mult_87/U270/ZN (OAI222_X1)                    0.07       1.31 f
+  iir_inst/mult_87/U10/CO (FA_X1)                         0.10       1.41 f
+  iir_inst/mult_87/U9/CO (FA_X1)                          0.09       1.50 f
+  iir_inst/mult_87/U8/CO (FA_X1)                          0.09       1.59 f
+  iir_inst/mult_87/U7/CO (FA_X1)                          0.09       1.68 f
+  iir_inst/mult_87/U6/CO (FA_X1)                          0.09       1.77 f
+  iir_inst/mult_87/U5/CO (FA_X1)                          0.09       1.86 f
+  iir_inst/mult_87/U4/CO (FA_X1)                          0.09       1.95 f
+  iir_inst/mult_87/U3/CO (FA_X1)                          0.09       2.04 f
+  iir_inst/mult_87/U190/Z (XOR2_X1)                       0.07       2.11 f
+  iir_inst/mult_87/U189/ZN (XNOR2_X1)                     0.06       2.17 f
+  iir_inst/mult_87/product[15] (IIR_DW_mult_tc_0)         0.00       2.17 f
+  iir_inst/U18/ZN (AOI22_X1)                              0.06       2.23 r
+  iir_inst/U17/ZN (INV_X1)                                0.02       2.25 f
+  iir_inst/ff21_reg[8]/D (DFF_X1)                         0.01       2.26 f
+  data arrival time                                                  2.26
+
+  clock MY_CLK (rise edge)                               10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.07       9.93
+  iir_inst/ff21_reg[8]/CK (DFF_X1)                        0.00       9.93 r
+  library setup time                                     -0.04       9.89
+  data required time                                                 9.89
+  --------------------------------------------------------------------------
+  data required time                                                 9.89
+  data arrival time                                                 -2.26
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.63
+
+
+1

@@ -1,0 +1,65 @@
+Information: Updating design information... (UID-85)
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : myiir
+Version: O-2018.06-SP4
+Date   : Tue Nov  3 09:45:50 2020
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: b0[3] (input port clocked by MY_CLK)
+  Endpoint: iir_inst/y_no_ff1_reg[6]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  myiir              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 f
+  b0[3] (in)                                              0.00       0.50 f
+  iir_inst/b0[3] (IIR)                                    0.00       0.50 f
+  iir_inst/mult_85/b[3] (IIR_DW_mult_tc_2_0)              0.00       0.50 f
+  iir_inst/mult_85/U247/ZN (XNOR2_X1)                     0.17       0.67 r
+  iir_inst/mult_85/U404/ZN (NAND2_X1)                     0.10       0.78 f
+  iir_inst/mult_85/U397/ZN (OAI22_X1)                     0.09       0.86 r
+  iir_inst/mult_85/U116/CO (HA_X1)                        0.07       0.93 r
+  iir_inst/mult_85/U112/S (FA_X1)                         0.11       1.04 f
+  iir_inst/mult_85/U111/S (FA_X1)                         0.11       1.15 f
+  iir_inst/mult_85/U291/ZN (NOR2_X1)                      0.06       1.21 r
+  iir_inst/mult_85/U296/ZN (OAI21_X1)                     0.04       1.25 f
+  iir_inst/mult_85/U249/ZN (AOI21_X1)                     0.11       1.36 r
+  iir_inst/mult_85/U277/ZN (OAI21_X1)                     0.04       1.40 f
+  iir_inst/mult_85/U385/ZN (XNOR2_X1)                     0.06       1.46 f
+  iir_inst/mult_85/product[13] (IIR_DW_mult_tc_2_0)       0.00       1.46 f
+  iir_inst/U71/ZN (NAND2_X1)                              0.03       1.49 r
+  iir_inst/U72/ZN (OAI21_X1)                              0.03       1.52 f
+  iir_inst/y_no_ff1_reg[6]/D (DFF_X1)                     0.01       1.53 f
+  data arrival time                                                  1.53
+
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                      -0.07      -0.07
+  iir_inst/y_no_ff1_reg[6]/CK (DFF_X1)                    0.00      -0.07 r
+  library setup time                                     -0.04      -0.11
+  data required time                                                -0.11
+  --------------------------------------------------------------------------
+  data required time                                                -0.11
+  data arrival time                                                 -1.53
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -1.64
+
+
+1

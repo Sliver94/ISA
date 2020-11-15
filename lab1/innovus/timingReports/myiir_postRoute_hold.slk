@@ -1,0 +1,27 @@
+# Format: clock  timeReq  slackR/slackF  holdR/holdF  instName/pinName   # cycle(s)
+MY_CLK(R)->MY_CLK(R)	0.072    */0.042         */-0.002        my_ff2_inst_data_reg/D    1
+MY_CLK(R)->MY_CLK(R)	0.075    0.048/*         -0.005/*        reg_file1_inst_registers_reg_0_/D    1
+MY_CLK(R)->MY_CLK(R)	0.075    0.048/*         -0.005/*        reg_file2_inst_registers_reg_7_/D    1
+MY_CLK(R)->MY_CLK(R)	0.075    0.048/*         -0.005/*        reg_file2_inst_registers_reg_3_/D    1
+MY_CLK(R)->MY_CLK(R)	0.075    0.048/*         -0.005/*        reg_file1_inst_registers_reg_5_/D    1
+MY_CLK(R)->MY_CLK(R)	0.075    0.048/*         -0.005/*        reg_file2_inst_registers_reg_4_/D    1
+MY_CLK(R)->MY_CLK(R)	0.075    0.048/*         -0.005/*        reg_file2_inst_registers_reg_2_/D    1
+MY_CLK(R)->MY_CLK(R)	0.075    0.048/*         -0.005/*        reg_file2_inst_registers_reg_5_/D    1
+MY_CLK(R)->MY_CLK(R)	0.075    0.048/*         -0.005/*        reg_file2_inst_registers_reg_6_/D    1
+MY_CLK(R)->MY_CLK(R)	0.075    0.049/*         -0.005/*        reg_file2_inst_registers_reg_1_/D    1
+MY_CLK(R)->MY_CLK(R)	0.075    0.049/*         -0.005/*        reg_file2_inst_registers_reg_0_/D    1
+MY_CLK(R)->MY_CLK(R)	0.075    0.049/*         -0.005/*        reg_file1_inst_registers_reg_3_/D    1
+MY_CLK(R)->MY_CLK(R)	0.075    0.049/*         -0.005/*        reg_file1_inst_registers_reg_6_/D    1
+MY_CLK(R)->MY_CLK(R)	0.075    0.049/*         -0.005/*        reg_file1_inst_registers_reg_4_/D    1
+MY_CLK(R)->MY_CLK(R)	0.075    0.050/*         -0.005/*        reg_file1_inst_registers_reg_1_/D    1
+MY_CLK(R)->MY_CLK(R)	0.075    0.050/*         -0.005/*        reg_file1_inst_registers_reg_2_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.060         */-0.002        reg_file1_inst_registers_reg_7_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.076         */-0.002        iir_inst_sw_reg_1_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.084         */-0.002        iir_inst_sw_reg_3_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.085         */-0.002        iir_inst_sw_reg_0_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.085         */-0.002        iir_inst_sw_reg_7_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.086         */-0.002        iir_inst_sw_reg_5_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.086         */-0.002        iir_inst_sw_reg_4_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.088         */-0.002        iir_inst_sw_reg_2_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.089         */-0.002        iir_inst_sw_reg_6_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.089         */-0.002        iir_inst_sw_reg_8_/D    1
