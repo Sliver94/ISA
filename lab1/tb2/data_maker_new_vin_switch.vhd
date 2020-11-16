@@ -48,15 +48,26 @@ begin  -- beh
       stop := 0;
     elsif CLK'event and CLK = '1' then  -- rising clock edge
       if not endfile(fp_in) then
-			readline(fp_in, line_in);
+	if (x = 103) and (stop = 0) then -- VIN switches for 1 cycle
+		VOUT <= '0' after tco;
+		stop := 1;
+	elsif (x = -1) and (stop = 1) then -- VIN switches for 2 cycles
+		VOUT <= '0' after tco;
+		stop := 2;
+	elsif stop = 2 then
+		VOUT <= '0' after tco;
+		stop := 3;
+        else
+		readline(fp_in, line_in);
         	read(line_in, x);
         	DOUT <= conv_std_logic_vector(x, 8) after tco;
         	VOUT <= '1' after tco;
         	sEndSim <= '0' after tco;
-	  end if;
-    else
-      VOUT <= '0' after tco;        
-      sEndSim <= '1' after tco;
+	end if;
+      else
+        VOUT <= '0' after tco;        
+        sEndSim <= '1' after tco;
+      end if;
     end if;
   end process;
 

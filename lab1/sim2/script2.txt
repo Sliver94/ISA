@@ -1,9 +1,0 @@
-vcom -93 -work ./work ../tb2/clk_gen.vhd
-vcom -93 -work ./work ../tb2/data_maker_new.vhd
-vcom -93 -work ./work ../tb2/data_sink.vhd
-vlog -work ./work ../netlist2/myiir.v
-vlog -work ./work ../tb2/tb_iir.v
-vsim -L /software/dk/nangate45/verilog/msim6.2g -sdftyp /tb_iir/UUT=../netlist2/myiir.sdf work.tb_iir
-vcd file ../vcd2/myiir_syn.vcd
-vcd add /tb_iir/UUT/*
-run 5 us

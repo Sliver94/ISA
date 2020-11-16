@@ -18,7 +18,7 @@ entity IIR is
     );
 end IIR;
 
-architecture beh_iir of IIR is
+architecture behavioral of IIR is
 
 signal w   				: std_logic_vector(8 downto 0);
 signal sw 				: std_logic_vector(8 downto 0);
@@ -62,4 +62,4 @@ begin
 	 output_temp <= y_no_ff + ff;	
 	 output <= output_temp(7 downto 0); 
 
-end beh_iir;
+end behavioral;

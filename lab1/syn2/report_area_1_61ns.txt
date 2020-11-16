@@ -1,0 +1,31 @@
+Warning: Design 'myiir' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : area
+Design : myiir
+Version: O-2018.06-SP4
+Date   : Mon Nov 16 10:34:15 2020
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db)
+
+Number of ports:                          387
+Number of nets:                          1946
+Number of cells:                         1554
+Number of combinational cells:           1473
+Number of sequential cells:                67
+Number of macros/black boxes:               0
+Number of buf/inv:                        337
+Number of references:                       2
+
+Combinational area:               1628.185993
+Buf/Inv area:                      199.500000
+Noncombinational area:             294.461989
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  1922.647982
+Total area:                 undefined
+1

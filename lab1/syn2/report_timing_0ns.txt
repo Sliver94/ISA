@@ -8,14 +8,14 @@ Report : timing
         -max_paths 1
 Design : myiir
 Version: O-2018.06-SP4
-Date   : Tue Nov  3 09:45:50 2020
+Date   : Mon Nov 16 10:29:24 2020
 ****************************************
 
 Operating Conditions: typical   Library: NangateOpenCellLibrary
 Wire Load Model Mode: top
 
-  Startpoint: b0[3] (input port clocked by MY_CLK)
-  Endpoint: iir_inst/y_no_ff1_reg[6]
+  Startpoint: bn1[3] (input port clocked by MY_CLK)
+  Endpoint: datapath_inst/iir_inst/ff11_reg[8]
             (rising edge-triggered flip-flop clocked by MY_CLK)
   Path Group: MY_CLK
   Path Type: max
@@ -29,37 +29,41 @@ Wire Load Model Mode: top
   clock MY_CLK (rise edge)                                0.00       0.00
   clock network delay (ideal)                             0.00       0.00
   input external delay                                    0.50       0.50 f
-  b0[3] (in)                                              0.00       0.50 f
-  iir_inst/b0[3] (IIR)                                    0.00       0.50 f
-  iir_inst/mult_85/b[3] (IIR_DW_mult_tc_2_0)              0.00       0.50 f
-  iir_inst/mult_85/U247/ZN (XNOR2_X1)                     0.17       0.67 r
-  iir_inst/mult_85/U404/ZN (NAND2_X1)                     0.10       0.78 f
-  iir_inst/mult_85/U397/ZN (OAI22_X1)                     0.09       0.86 r
-  iir_inst/mult_85/U116/CO (HA_X1)                        0.07       0.93 r
-  iir_inst/mult_85/U112/S (FA_X1)                         0.11       1.04 f
-  iir_inst/mult_85/U111/S (FA_X1)                         0.11       1.15 f
-  iir_inst/mult_85/U291/ZN (NOR2_X1)                      0.06       1.21 r
-  iir_inst/mult_85/U296/ZN (OAI21_X1)                     0.04       1.25 f
-  iir_inst/mult_85/U249/ZN (AOI21_X1)                     0.11       1.36 r
-  iir_inst/mult_85/U277/ZN (OAI21_X1)                     0.04       1.40 f
-  iir_inst/mult_85/U385/ZN (XNOR2_X1)                     0.06       1.46 f
-  iir_inst/mult_85/product[13] (IIR_DW_mult_tc_2_0)       0.00       1.46 f
-  iir_inst/U71/ZN (NAND2_X1)                              0.03       1.49 r
-  iir_inst/U72/ZN (OAI21_X1)                              0.03       1.52 f
-  iir_inst/y_no_ff1_reg[6]/D (DFF_X1)                     0.01       1.53 f
-  data arrival time                                                  1.53
+  bn1[3] (in)                                             0.00       0.50 f
+  datapath_inst/bn1[3] (datapath)                         0.00       0.50 f
+  datapath_inst/iir_inst/bn1[3] (IIR)                     0.00       0.50 f
+  datapath_inst/iir_inst/mult_86/b[3] (IIR_DW_mult_tc_6)
+                                                          0.00       0.50 f
+  datapath_inst/iir_inst/mult_86/U282/ZN (XNOR2_X1)       0.18       0.68 r
+  datapath_inst/iir_inst/mult_86/U367/ZN (NAND2_X1)       0.10       0.78 f
+  datapath_inst/iir_inst/mult_86/U443/ZN (OAI22_X1)       0.08       0.86 r
+  datapath_inst/iir_inst/mult_86/U127/CO (HA_X1)          0.07       0.92 r
+  datapath_inst/iir_inst/mult_86/U122/S (FA_X1)           0.12       1.04 f
+  datapath_inst/iir_inst/mult_86/U262/S (FA_X1)           0.14       1.18 r
+  datapath_inst/iir_inst/mult_86/U385/ZN (NOR2_X1)        0.03       1.21 f
+  datapath_inst/iir_inst/mult_86/U384/ZN (NOR2_X1)        0.04       1.25 r
+  datapath_inst/iir_inst/mult_86/U440/ZN (NAND2_X1)       0.03       1.29 f
+  datapath_inst/iir_inst/mult_86/U465/ZN (OAI21_X1)       0.05       1.34 r
+  datapath_inst/iir_inst/mult_86/U463/ZN (AOI21_X1)       0.03       1.37 f
+  datapath_inst/iir_inst/mult_86/U359/ZN (XNOR2_X1)       0.05       1.42 f
+  datapath_inst/iir_inst/mult_86/product[15] (IIR_DW_mult_tc_6)
+                                                          0.00       1.42 f
+  datapath_inst/iir_inst/U21/ZN (AOI22_X1)                0.05       1.48 r
+  datapath_inst/iir_inst/U22/ZN (INV_X1)                  0.02       1.50 f
+  datapath_inst/iir_inst/ff11_reg[8]/D (DFF_X1)           0.01       1.50 f
+  data arrival time                                                  1.50
 
   clock MY_CLK (rise edge)                                0.00       0.00
   clock network delay (ideal)                             0.00       0.00
   clock uncertainty                                      -0.07      -0.07
-  iir_inst/y_no_ff1_reg[6]/CK (DFF_X1)                    0.00      -0.07 r
+  datapath_inst/iir_inst/ff11_reg[8]/CK (DFF_X1)          0.00      -0.07 r
   library setup time                                     -0.04      -0.11
   data required time                                                -0.11
   --------------------------------------------------------------------------
   data required time                                                -0.11
-  data arrival time                                                 -1.53
+  data arrival time                                                 -1.50
   --------------------------------------------------------------------------
-  slack (VIOLATED)                                                  -1.64
+  slack (VIOLATED)                                                  -1.61
 
 
 1

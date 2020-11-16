@@ -13,7 +13,7 @@ entity reg_file is
     );
 end reg_file;
 
-architecture beh_reg_file of reg_file is
+architecture behavioral of reg_file is
 
 signal registers : std_logic_vector(7 downto 0);
 
@@ -32,4 +32,4 @@ begin
 	 
     output <= registers;
 
-end beh_reg_file;
+end behavioral;

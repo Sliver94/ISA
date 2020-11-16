@@ -1,0 +1,75 @@
+Warning: Design 'myiir' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : myiir
+Version: O-2018.06-SP4
+Date   : Mon Nov 16 10:34:15 2020
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: b0[5] (input port clocked by MY_CLK)
+  Endpoint: datapath_inst/iir_inst/y_no_ff1_reg[7]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  myiir              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 r
+  b0[5] (in)                                              0.00       0.50 r
+  datapath_inst/b0[5] (datapath)                          0.00       0.50 r
+  datapath_inst/iir_inst/b0[5] (IIR)                      0.00       0.50 r
+  datapath_inst/iir_inst/mult_85/b[5] (IIR_DW_mult_tc_4)
+                                                          0.00       0.50 r
+  datapath_inst/iir_inst/mult_85/U434/ZN (XNOR2_X1)       0.07       0.57 r
+  datapath_inst/iir_inst/mult_85/U281/ZN (NAND2_X1)       0.07       0.64 f
+  datapath_inst/iir_inst/mult_85/U399/ZN (AOI21_X1)       0.08       0.71 r
+  datapath_inst/iir_inst/mult_85/U261/ZN (AND2_X2)        0.06       0.77 r
+  datapath_inst/iir_inst/mult_85/U278/ZN (XNOR2_X1)       0.06       0.83 r
+  datapath_inst/iir_inst/mult_85/U277/Z (XOR2_X1)         0.08       0.91 r
+  datapath_inst/iir_inst/mult_85/U436/ZN (INV_X1)         0.03       0.94 f
+  datapath_inst/iir_inst/mult_85/U345/ZN (XNOR2_X1)       0.06       1.00 r
+  datapath_inst/iir_inst/mult_85/U344/ZN (XNOR2_X1)       0.06       1.06 r
+  datapath_inst/iir_inst/mult_85/U435/ZN (INV_X1)         0.03       1.09 f
+  datapath_inst/iir_inst/mult_85/U521/ZN (OAI211_X1)      0.04       1.13 r
+  datapath_inst/iir_inst/mult_85/U285/ZN (NAND3_X1)       0.04       1.17 f
+  datapath_inst/iir_inst/mult_85/U460/ZN (NAND3_X1)       0.03       1.20 r
+  datapath_inst/iir_inst/mult_85/U505/ZN (NAND2_X1)       0.03       1.24 f
+  datapath_inst/iir_inst/mult_85/U504/ZN (AOI21_X1)       0.04       1.28 r
+  datapath_inst/iir_inst/mult_85/U274/ZN (OAI21_X1)       0.03       1.31 f
+  datapath_inst/iir_inst/mult_85/U487/ZN (AOI21_X1)       0.04       1.35 r
+  datapath_inst/iir_inst/mult_85/U446/Z (XOR2_X1)         0.07       1.42 r
+  datapath_inst/iir_inst/mult_85/product[14] (IIR_DW_mult_tc_4)
+                                                          0.00       1.42 r
+  datapath_inst/iir_inst/U133/ZN (INV_X1)                 0.02       1.44 f
+  datapath_inst/iir_inst/U131/ZN (OAI22_X1)               0.05       1.49 r
+  datapath_inst/iir_inst/y_no_ff1_reg[7]/D (DFF_X1)       0.01       1.50 r
+  data arrival time                                                  1.50
+
+  clock MY_CLK (rise edge)                                1.61       1.61
+  clock network delay (ideal)                             0.00       1.61
+  clock uncertainty                                      -0.07       1.54
+  datapath_inst/iir_inst/y_no_ff1_reg[7]/CK (DFF_X1)      0.00       1.54 r
+  library setup time                                     -0.04       1.50
+  data required time                                                 1.50
+  --------------------------------------------------------------------------
+  data required time                                                 1.50
+  data arrival time                                                 -1.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

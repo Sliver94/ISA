@@ -12,7 +12,7 @@ entity my_ff is
     );
 end my_ff;
 
-architecture beh_my_ff of my_ff is
+architecture behavioral of my_ff is
 
 signal data : std_logic;
 
@@ -31,4 +31,4 @@ begin
 
     output <= data;
 
-end beh_my_ff;
+end behavioral;
