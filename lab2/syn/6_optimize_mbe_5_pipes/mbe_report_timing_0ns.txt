@@ -1,0 +1,69 @@
+Information: Updating design information... (UID-85)
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPmul
+Version: O-2018.06-SP4
+Date   : Wed Dec  9 16:19:50 2020
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: FP_A[0] (input port clocked by MY_CLK)
+  Endpoint: I2/MBE_inst/FA220/h1/MY_CLK_r_REG666_S1
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPmul              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 f
+  FP_A[0] (in)                                            0.00       0.50 f
+  InReg/input1[0] (my_register)                           0.00       0.50 f
+  InReg/output1[0] (my_register)                          0.00       0.50 f
+  I1/FP_A[0] (FPmul_stage1)                               0.00       0.50 f
+  I1/I0/FP[0] (UnpackFP_0)                                0.00       0.50 f
+  I1/I0/SIG[0] (UnpackFP_0)                               0.00       0.50 f
+  I1/A_SIG[0] (FPmul_stage1)                              0.00       0.50 f
+  I2/A_SIG[0] (FPmul_stage2)                              0.00       0.50 f
+  I2/MBE_inst/x[0] (MBE)                                  0.00       0.50 f
+  I2/MBE_inst/BEU1/b_in[1] (BEU_0)                        0.00       0.50 f
+  I2/MBE_inst/BEU1/U10/ZN (INV_X1)                        0.14       0.64 r
+  I2/MBE_inst/BEU1/U99/ZN (NAND2_X1)                      0.07       0.72 f
+  I2/MBE_inst/BEU1/U18/ZN (NAND2_X1)                      0.05       0.76 r
+  I2/MBE_inst/BEU1/U26/ZN (NAND3_X1)                      0.04       0.80 f
+  I2/MBE_inst/BEU1/U102/ZN (NAND2_X1)                     0.04       0.84 r
+  I2/MBE_inst/BEU1/a_out[2] (BEU_0)                       0.00       0.84 r
+  I2/MBE_inst/FA220/a (full_adder_90)                     0.00       0.84 r
+  I2/MBE_inst/FA220/h0/a (half_adder_180)                 0.00       0.84 r
+  I2/MBE_inst/FA220/h0/U6/Z (XOR2_X1)                     0.06       0.91 r
+  I2/MBE_inst/FA220/h0/s (half_adder_180)                 0.00       0.91 r
+  I2/MBE_inst/FA220/h1/a (half_adder_179)                 0.00       0.91 r
+  I2/MBE_inst/FA220/h1/MY_CLK_r_REG666_S1/D (DFF_X1)      0.01       0.91 r
+  data arrival time                                                  0.91
+
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                      -0.07      -0.07
+  I2/MBE_inst/FA220/h1/MY_CLK_r_REG666_S1/CK (DFF_X1)     0.00      -0.07 r
+  library setup time                                     -0.03      -0.10
+  data required time                                                -0.10
+  --------------------------------------------------------------------------
+  data required time                                                -0.10
+  data arrival time                                                 -0.91
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -1.02
+
+
+1

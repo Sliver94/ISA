@@ -1,0 +1,111 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPmul
+Version: O-2018.06-SP4
+Date   : Tue Dec  8 18:55:00 2020
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: I1/I0/MY_CLK_r_REG289_S1
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: I2/MBE_inst/FA285/h1/MY_CLK_r_REG218_S2
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPmul              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  I1/I0/MY_CLK_r_REG289_S1/CK (DFF_X1)                    0.00       0.00 r
+  I1/I0/MY_CLK_r_REG289_S1/Q (DFF_X1)                     0.12       0.12 r
+  I1/I0/SIG[15] (UnpackFP_0)                              0.00       0.12 r
+  I1/A_SIG[15] (FPmul_stage1)                             0.00       0.12 r
+  I2/A_SIG[15] (FPmul_stage2)                             0.00       0.12 r
+  I2/MBE_inst/x[15] (MBE)                                 0.00       0.12 r
+  I2/MBE_inst/BEU9/b_in[0] (BEU_5)                        0.00       0.12 r
+  I2/MBE_inst/BEU9/U62/ZN (XNOR2_X1)                      0.05       0.18 f
+  I2/MBE_inst/BEU9/U57/ZN (NOR2_X1)                       0.08       0.26 r
+  I2/MBE_inst/BEU9/U4/Z (CLKBUF_X3)                       0.10       0.35 r
+  I2/MBE_inst/BEU9/U129/ZN (NAND2_X1)                     0.05       0.40 f
+  I2/MBE_inst/BEU9/U23/ZN (OAI211_X1)                     0.04       0.44 r
+  I2/MBE_inst/BEU9/a_out[4] (BEU_5)                       0.00       0.44 r
+  I2/MBE_inst/FA3/b (full_adder_307)                      0.00       0.44 r
+  I2/MBE_inst/FA3/h0/b (half_adder_614)                   0.00       0.44 r
+  I2/MBE_inst/FA3/h0/U2/ZN (INV_X1)                       0.03       0.47 f
+  I2/MBE_inst/FA3/h0/U1/ZN (XNOR2_X1)                     0.06       0.52 f
+  I2/MBE_inst/FA3/h0/s (half_adder_614)                   0.00       0.52 f
+  I2/MBE_inst/FA3/h1/a (half_adder_613)                   0.00       0.52 f
+  I2/MBE_inst/FA3/h1/U3/ZN (AND2_X1)                      0.04       0.56 f
+  I2/MBE_inst/FA3/h1/cout (half_adder_613)                0.00       0.56 f
+  I2/MBE_inst/FA3/U1/ZN (OR2_X1)                          0.06       0.62 f
+  I2/MBE_inst/FA3/cout (full_adder_307)                   0.00       0.62 f
+  I2/MBE_inst/FA62/a (full_adder_248)                     0.00       0.62 f
+  I2/MBE_inst/FA62/h0/a (half_adder_496)                  0.00       0.62 f
+  I2/MBE_inst/FA62/h0/U1/ZN (XNOR2_X1)                    0.06       0.68 r
+  I2/MBE_inst/FA62/h0/s (half_adder_496)                  0.00       0.68 r
+  I2/MBE_inst/FA62/h1/a (half_adder_495)                  0.00       0.68 r
+  I2/MBE_inst/FA62/h1/U1/ZN (XNOR2_X1)                    0.07       0.75 r
+  I2/MBE_inst/FA62/h1/s (half_adder_495)                  0.00       0.75 r
+  I2/MBE_inst/FA62/s (full_adder_248)                     0.00       0.75 r
+  I2/MBE_inst/FA138/a (full_adder_172)                    0.00       0.75 r
+  I2/MBE_inst/FA138/h0/a (half_adder_344)                 0.00       0.75 r
+  I2/MBE_inst/FA138/h0/U2/ZN (INV_X1)                     0.03       0.77 f
+  I2/MBE_inst/FA138/h0/U1/ZN (XNOR2_X1)                   0.06       0.83 f
+  I2/MBE_inst/FA138/h0/s (half_adder_344)                 0.00       0.83 f
+  I2/MBE_inst/FA138/h1/a (half_adder_343)                 0.00       0.83 f
+  I2/MBE_inst/FA138/h1/U3/ZN (AND2_X1)                    0.04       0.87 f
+  I2/MBE_inst/FA138/h1/cout (half_adder_343)              0.00       0.87 f
+  I2/MBE_inst/FA138/U1/ZN (OR2_X1)                        0.06       0.92 f
+  I2/MBE_inst/FA138/cout (full_adder_172)                 0.00       0.92 f
+  I2/MBE_inst/FA196/b (full_adder_114)                    0.00       0.92 f
+  I2/MBE_inst/FA196/h0/b (half_adder_228)                 0.00       0.92 f
+  I2/MBE_inst/FA196/h0/U3/ZN (XNOR2_X1)                   0.06       0.99 f
+  I2/MBE_inst/FA196/h0/s (half_adder_228)                 0.00       0.99 f
+  I2/MBE_inst/FA196/h1/a (half_adder_227)                 0.00       0.99 f
+  I2/MBE_inst/FA196/h1/U1/ZN (AND2_X1)                    0.04       1.02 f
+  I2/MBE_inst/FA196/h1/cout (half_adder_227)              0.00       1.02 f
+  I2/MBE_inst/FA196/U1/ZN (OR2_X1)                        0.05       1.08 f
+  I2/MBE_inst/FA196/cout (full_adder_114)                 0.00       1.08 f
+  I2/MBE_inst/FA240/a (full_adder_70)                     0.00       1.08 f
+  I2/MBE_inst/FA240/h0/a (half_adder_140)                 0.00       1.08 f
+  I2/MBE_inst/FA240/h0/U1/ZN (INV_X1)                     0.03       1.11 r
+  I2/MBE_inst/FA240/h0/U3/ZN (XNOR2_X1)                   0.06       1.17 r
+  I2/MBE_inst/FA240/h0/s (half_adder_140)                 0.00       1.17 r
+  I2/MBE_inst/FA240/h1/a (half_adder_139)                 0.00       1.17 r
+  I2/MBE_inst/FA240/h1/U3/ZN (XNOR2_X1)                   0.07       1.23 r
+  I2/MBE_inst/FA240/h1/s (half_adder_139)                 0.00       1.23 r
+  I2/MBE_inst/FA240/s (full_adder_70)                     0.00       1.23 r
+  I2/MBE_inst/FA285/b (full_adder_25)                     0.00       1.23 r
+  I2/MBE_inst/FA285/h0/b (half_adder_50)                  0.00       1.23 r
+  I2/MBE_inst/FA285/h0/U3/ZN (XNOR2_X1)                   0.06       1.30 r
+  I2/MBE_inst/FA285/h0/s (half_adder_50)                  0.00       1.30 r
+  I2/MBE_inst/FA285/h1/a (half_adder_49)                  0.00       1.30 r
+  I2/MBE_inst/FA285/h1/MY_CLK_r_REG218_S2/D (DFF_X1)      0.01       1.31 r
+  data arrival time                                                  1.31
+
+  clock MY_CLK (rise edge)                                1.41       1.41
+  clock network delay (ideal)                             0.00       1.41
+  clock uncertainty                                      -0.07       1.34
+  I2/MBE_inst/FA285/h1/MY_CLK_r_REG218_S2/CK (DFF_X1)     0.00       1.34 r
+  library setup time                                     -0.03       1.31
+  data required time                                                 1.31
+  --------------------------------------------------------------------------
+  data required time                                                 1.31
+  data arrival time                                                 -1.31
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

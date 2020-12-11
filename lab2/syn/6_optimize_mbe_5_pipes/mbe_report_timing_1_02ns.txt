@@ -1,0 +1,99 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPmul
+Version: O-2018.06-SP4
+Date   : Wed Dec  9 17:27:47 2020
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: I2/MBE_inst/MY_CLK_r_REG618_S1
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: I2/MBE_inst/FA269/MY_CLK_r_REG608_S2
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPmul              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  I2/MBE_inst/MY_CLK_r_REG618_S1/CK (DFF_X1)              0.00       0.00 r
+  I2/MBE_inst/MY_CLK_r_REG618_S1/Q (DFF_X1)               0.13       0.13 r
+  I2/MBE_inst/BEU1/b_in[2] (BEU_0)                        0.00       0.13 r
+  I2/MBE_inst/BEU1/U7/Z (BUF_X1)                          0.05       0.18 r
+  I2/MBE_inst/BEU1/U16/ZN (XNOR2_X1)                      0.06       0.23 r
+  I2/MBE_inst/BEU1/U106/ZN (OR2_X1)                       0.04       0.27 r
+  I2/MBE_inst/BEU1/U105/ZN (NAND2_X1)                     0.03       0.30 f
+  I2/MBE_inst/BEU1/a_out[2] (BEU_0)                       0.00       0.30 f
+  I2/MBE_inst/FA220/a (full_adder_90)                     0.00       0.30 f
+  I2/MBE_inst/FA220/h0/a (half_adder_180)                 0.00       0.30 f
+  I2/MBE_inst/FA220/h0/U6/Z (XOR2_X1)                     0.08       0.38 f
+  I2/MBE_inst/FA220/h0/s (half_adder_180)                 0.00       0.38 f
+  I2/MBE_inst/FA220/h1/a (half_adder_179)                 0.00       0.38 f
+  I2/MBE_inst/FA220/h1/U2/ZN (AND2_X1)                    0.04       0.41 f
+  I2/MBE_inst/FA220/h1/cout (half_adder_179)              0.00       0.41 f
+  I2/MBE_inst/FA220/U1/ZN (OR2_X1)                        0.05       0.47 f
+  I2/MBE_inst/FA220/cout (full_adder_90)                  0.00       0.47 f
+  I2/MBE_inst/FA265/a (full_adder_45)                     0.00       0.47 f
+  I2/MBE_inst/FA265/h0/a (half_adder_90)                  0.00       0.47 f
+  I2/MBE_inst/FA265/h0/U5/Z (XOR2_X1)                     0.07       0.54 f
+  I2/MBE_inst/FA265/h0/s (half_adder_90)                  0.00       0.54 f
+  I2/MBE_inst/FA265/h1/a (half_adder_89)                  0.00       0.54 f
+  I2/MBE_inst/FA265/h1/U1/ZN (AND2_X1)                    0.04       0.57 f
+  I2/MBE_inst/FA265/h1/cout (half_adder_89)               0.00       0.57 f
+  I2/MBE_inst/FA265/U2/ZN (INV_X1)                        0.02       0.60 r
+  I2/MBE_inst/FA265/U1/ZN (NAND2_X1)                      0.02       0.62 f
+  I2/MBE_inst/FA265/cout (full_adder_45)                  0.00       0.62 f
+  I2/MBE_inst/FA266/cin (full_adder_44)                   0.00       0.62 f
+  I2/MBE_inst/FA266/h1/b (half_adder_87)                  0.00       0.62 f
+  I2/MBE_inst/FA266/h1/U3/ZN (AND2_X1)                    0.04       0.66 f
+  I2/MBE_inst/FA266/h1/cout (half_adder_87)               0.00       0.66 f
+  I2/MBE_inst/FA266/U2/ZN (INV_X1)                        0.02       0.68 r
+  I2/MBE_inst/FA266/U1/ZN (NAND2_X1)                      0.02       0.70 f
+  I2/MBE_inst/FA266/cout (full_adder_44)                  0.00       0.70 f
+  I2/MBE_inst/FA267/cin (full_adder_43)                   0.00       0.70 f
+  I2/MBE_inst/FA267/h1/b (half_adder_85)                  0.00       0.70 f
+  I2/MBE_inst/FA267/h1/U4/ZN (AND2_X1)                    0.04       0.74 f
+  I2/MBE_inst/FA267/h1/cout (half_adder_85)               0.00       0.74 f
+  I2/MBE_inst/FA267/U2/ZN (INV_X1)                        0.02       0.76 r
+  I2/MBE_inst/FA267/U1/ZN (NAND2_X1)                      0.02       0.79 f
+  I2/MBE_inst/FA267/cout (full_adder_43)                  0.00       0.79 f
+  I2/MBE_inst/FA268/cin (full_adder_42)                   0.00       0.79 f
+  I2/MBE_inst/FA268/h1/b (half_adder_83)                  0.00       0.79 f
+  I2/MBE_inst/FA268/h1/U4/ZN (AND2_X1)                    0.03       0.82 f
+  I2/MBE_inst/FA268/h1/cout (half_adder_83)               0.00       0.82 f
+  I2/MBE_inst/FA268/U2/ZN (INV_X1)                        0.02       0.84 r
+  I2/MBE_inst/FA268/U1/ZN (NAND2_X1)                      0.02       0.87 f
+  I2/MBE_inst/FA268/cout (full_adder_42)                  0.00       0.87 f
+  I2/MBE_inst/FA269/cin (full_adder_41)                   0.00       0.87 f
+  I2/MBE_inst/FA269/h1/b (half_adder_81)                  0.00       0.87 f
+  I2/MBE_inst/FA269/h1/U3/ZN (AND2_X1)                    0.04       0.90 f
+  I2/MBE_inst/FA269/h1/cout (half_adder_81)               0.00       0.90 f
+  I2/MBE_inst/FA269/MY_CLK_r_REG608_S2/D (DFF_X1)         0.01       0.91 f
+  data arrival time                                                  0.91
+
+  clock MY_CLK (rise edge)                                1.02       1.02
+  clock network delay (ideal)                             0.00       1.02
+  clock uncertainty                                      -0.07       0.95
+  I2/MBE_inst/FA269/MY_CLK_r_REG608_S2/CK (DFF_X1)        0.00       0.95 r
+  library setup time                                     -0.04       0.91
+  data required time                                                 0.91
+  --------------------------------------------------------------------------
+  data required time                                                 0.91
+  data arrival time                                                 -0.91
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

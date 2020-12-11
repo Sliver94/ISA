@@ -3,6 +3,11 @@ analyze -f vhdl -lib WORK ../fpuvhdl/common/fpround_fpround.vhd
 analyze -f vhdl -lib WORK ../fpuvhdl/common/packfp_packfp.vhd
 analyze -f vhdl -lib WORK ../fpuvhdl/common/unpackfp_unpackfp.vhd
 
+analyze -f vhdl -lib WORK ../fpuvhdl/multiplier/MBE/BEU.vhd
+analyze -f vhdl -lib WORK ../fpuvhdl/multiplier/MBE/half_adder.vhd
+analyze -f vhdl -lib WORK ../fpuvhdl/multiplier/MBE/full_adder.vhd
+analyze -f vhdl -lib WORK ../fpuvhdl/multiplier/MBE/MBE.vhd
+
 analyze -f vhdl -lib WORK ../fpuvhdl/multiplier/my_register.vhd
 analyze -f vhdl -lib WORK ../fpuvhdl/multiplier/fpmul_stage1_struct.vhd
 analyze -f vhdl -lib WORK ../fpuvhdl/multiplier/fpmul_stage2_struct_MBE.vhd
@@ -21,7 +26,8 @@ set_input_delay 0.5 -max -clock MY_CLK [remove_from_collection [all_inputs] clk]
 set_output_delay 0.5 -max -clock MY_CLK [all_outputs]
 set OLOAD [load_of NangateOpenCellLibrary/BUF_X4/A]
 set_load $OLOAD [all_outputs]
-compile_ultra
+
+compile
 report_timing > mbe_report_timing_0ns.txt
 report_area > mbe_report_area_0ns.txt
 report_resources > mbe_report_resources_0n.txt
