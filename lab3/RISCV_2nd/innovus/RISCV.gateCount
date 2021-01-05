@@ -1,0 +1,16 @@
+Gate area 0.7980 um^2
+Level 0 Module RISCV                                    Gates=     18013 Cells=    8114 Area=   14374.9 um^2
+Level 1 Module b2v_adder_4_inst                         Gates=104        Cells=50       Area=      83.0 um^2
+Level 1 Module b2v_address_adder_inst                   Gates=230        Cells=177      Area=     183.5 um^2
+Level 2 Module b2v_address_adder_inst/add_19            Gates=230        Cells=177      Area=     183.5 um^2
+Level 1 Module b2v_ALU_inst                             Gates=1062       Cells=741      Area=     847.7 um^2
+Level 2 Module b2v_ALU_inst/lt_46                       Gates=121        Cells=105      Area=      96.6 um^2
+Level 2 Module b2v_ALU_inst/r300                        Gates=279        Cells=234      Area=     222.6 um^2
+Level 1 Module b2v_Amux_forwarding_inst                 Gates=128        Cells=85       Area=     102.7 um^2
+Level 1 Module b2v_Bmux_forwarding_inst                 Gates=137        Cells=92       Area=     109.9 um^2
+Level 1 Module b2v_EX_MEM_inst                          Gates=869        Cells=331      Area=     693.7 um^2
+Level 1 Module b2v_ID_EX_reg_inst                       Gates=1508       Cells=576      Area=    1203.4 um^2
+Level 1 Module b2v_IF_ID_reg_inst                       Gates=777        Cells=295      Area=     620.0 um^2
+Level 1 Module b2v_MEM_WB_reg_inst                      Gates=577        Cells=221      Area=     460.7 um^2
+Level 1 Module b2v_PC_inst                              Gates=262        Cells=100      Area=     209.1 um^2
+Level 1 Module b2v_registers_inst                       Gates=11626      Cells=4997     Area=    9278.1 um^2

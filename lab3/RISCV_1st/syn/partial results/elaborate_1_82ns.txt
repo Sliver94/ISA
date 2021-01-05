@@ -1,0 +1,187 @@
+Loading db file '/software/synopsys/syn_current_64.18/libraries/syn/gtech.db'
+Loading db file '/software/synopsys/syn_current_64.18/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'RISCV'.
+Information: Building the design 'adder_4'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'address_adder'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'my_mux'. (HDL-193)
+
+Statistics for case statements in always block at line 14 in file
+	'../RISCV_1st/src/stage1/my_mux.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            16            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'alu'. (HDL-193)
+Warning:  ../RISCV_1st/src/stage3/ALU.vhd:22: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 20 in file
+	'../RISCV_1st/src/stage3/ALU.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            22            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'my_mux32'. (HDL-193)
+
+Statistics for case statements in always block at line 15 in file
+	'../RISCV_1st/src/my_mux32.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            17            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'branch_control_unit'. (HDL-193)
+Warning:  ../RISCV_1st/src/stage2/branch_control_unit.vhd:15: The initial value for signal 'curr_state' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+Warning:  ../RISCV_1st/src/stage2/branch_control_unit.vhd:15: The initial value for signal 'next_state' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+
+Statistics for case statements in always block at line 25 in file
+	'../RISCV_1st/src/stage2/branch_control_unit.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            27            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 70 in file
+	'../RISCV_1st/src/stage2/branch_control_unit.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            72            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine branch_control_unit line 18 in file
+		'../RISCV_1st/src/stage2/branch_control_unit.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   curr_state_reg    | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'ex_mem_reg'. (HDL-193)
+
+Inferred memory devices in process
+	in routine EX_MEM_reg line 36 in file
+		'../RISCV_1st/src/EX_MEM_reg.vhd'.
+==================================================================================
+|     Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+==================================================================================
+|   read_data2_out_reg   | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    RegWrite_out_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    MemtoReg_out_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    MemRead_out_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    MemWrite_out_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     Branch_out_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+| write_register_out_reg | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+|    ZeroFlag_out_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|   ALU_output_out_reg   | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+| branch_address_out_reg | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+==================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'forwarding_unit'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'hazard_detection_unit'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'id_ex_reg'. (HDL-193)
+
+Inferred memory devices in process
+	in routine ID_EX_reg line 51 in file
+		'../RISCV_1st/src/ID_EX_reg.vhd'.
+============================================================================================
+|          Register Name           |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+============================================================================================
+|       jal_control_out_reg        | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|         RegWrite_out_reg         | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|         MemtoReg_out_reg         | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|         MemRead_out_reg          | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|         MemWrite_out_reg         | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|          Branch_out_reg          | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|         ALUSrcA_out_reg          | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|         ALUSrcB_out_reg          | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|          ALUOp_out_reg           | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+|        immediate_out_reg         | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|        read_data1_out_reg        | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|        read_data2_out_reg        | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|   instruction_address_out_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|      write_register_out_reg      | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+|      read_address1_out_reg       | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+|      read_address2_out_reg       | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+| next_instruction_address_out_reg | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+============================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'if_id_reg'. (HDL-193)
+
+Inferred memory devices in process
+	in routine IF_ID_reg line 22 in file
+		'../RISCV_1st/src/IF_ID_reg.vhd'.
+============================================================================================
+|          Register Name           |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+============================================================================================
+| next_instruction_address_out_reg | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|   instruction_address_out_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       instruction_out_reg        | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+============================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'imm_gen'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'control'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mem_wb_reg'. (HDL-193)
+
+Inferred memory devices in process
+	in routine MEM_WB_reg line 27 in file
+		'../RISCV_1st/src/MEM_WB_reg.vhd'.
+==================================================================================
+|     Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+==================================================================================
+| write_register_out_reg | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+|    RegWrite_out_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    MemtoReg_out_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|   ALU_output_out_reg   | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|  memory_data_out_reg   | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+==================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'pc'. (HDL-193)
+
+Inferred memory devices in process
+	in routine PC line 17 in file
+		'../RISCV_1st/src/stage1/PC.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     output_reg      | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'registers'. (HDL-193)
+
+Inferred memory devices in process
+	in routine registers line 26 in file
+		'../RISCV_1st/src/stage2/registers.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   data_read1_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|   data_read2_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+| registers_array_reg | Flip-flop | 1024  |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+|   registers/29   |   32   |   32    |      5       |
+|   registers/30   |   32   |   32    |      5       |
+======================================================
+Presto compilation completed successfully.
+1

@@ -1,0 +1,61 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'RISCV' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RISCV
+Version: O-2018.06-SP4
+Date   : Tue Dec 29 20:57:37 2020
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: rst (input port clocked by MY_CLK)
+  Endpoint: b2v_registers_inst/registers_array_reg[12][12]
+            (rising edge-triggered flip-flop clocked by MY_CLK')
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RISCV              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 f
+  rst (in)                                                0.00       0.50 f
+  b2v_registers_inst/rst (registers)                      0.00       0.50 f
+  b2v_registers_inst/U254/ZN (INV_X1)                     0.04       0.54 r
+  b2v_registers_inst/U64/Z (CLKBUF_X3)                    0.06       0.60 r
+  b2v_registers_inst/U599/ZN (OAI21_X1)                   0.05       0.64 f
+  b2v_registers_inst/U381/ZN (INV_X1)                     0.04       0.68 r
+  b2v_registers_inst/U332/Z (CLKBUF_X3)                   0.06       0.75 r
+  b2v_registers_inst/U949/ZN (NAND2_X1)                   0.03       0.78 f
+  b2v_registers_inst/U948/ZN (OAI21_X1)                   0.03       0.81 r
+  b2v_registers_inst/registers_array_reg[12][12]/D (DFF_X1)
+                                                          0.01       0.82 r
+  data arrival time                                                  0.82
+
+  clock MY_CLK' (rise edge)                               0.80       0.80
+  clock network delay (ideal)                             0.00       0.80
+  clock uncertainty                                      -0.07       0.73
+  b2v_registers_inst/registers_array_reg[12][12]/CK (DFF_X1)
+                                                          0.00       0.73 r
+  library setup time                                     -0.03       0.69
+  data required time                                                 0.69
+  --------------------------------------------------------------------------
+  data required time                                                 0.69
+  data arrival time                                                 -0.82
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.13
+
+
+1

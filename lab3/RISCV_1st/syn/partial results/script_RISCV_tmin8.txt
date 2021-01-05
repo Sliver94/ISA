@@ -1,0 +1,38 @@
+analyze -f vhdl -lib WORK ../RISCV_1st/src/my_mux32.vhd
+analyze -f vhdl -lib WORK ../RISCV_1st/src/IF_ID_reg.vhd
+analyze -f vhdl -lib WORK ../RISCV_1st/src/MEM_WB_reg.vhd
+analyze -f vhdl -lib WORK ../RISCV_1st/src/EX_MEM_reg.vhd
+analyze -f vhdl -lib WORK ../RISCV_1st/src/ID_EX_reg.vhd
+analyze -f vhdl -lib WORK ../RISCV_1st/src/stage1/PC.vhd
+analyze -f vhdl -lib WORK ../RISCV_1st/src/stage1/my_mux.vhd
+analyze -f vhdl -lib WORK ../RISCV_1st/src/stage1/adder_4.vhd
+analyze -f vhdl -lib WORK ../RISCV_1st/src/stage2/imm_gen.vhd
+analyze -f vhdl -lib WORK ../RISCV_1st/src/stage2/registers.vhd
+analyze -f vhdl -lib WORK ../RISCV_1st/src/stage2/control.vhd
+analyze -f vhdl -lib WORK ../RISCV_1st/src/stage2/forwarding_unit.vhd
+analyze -f vhdl -lib WORK ../RISCV_1st/src/stage2/hazard_detection_unit.vhd
+analyze -f vhdl -lib WORK ../RISCV_1st/src/stage2/branch_control_unit.vhd
+analyze -f vhdl -lib WORK ../RISCV_1st/src/stage3/address_adder.vhd
+analyze -f vhdl -lib WORK ../RISCV_1st/src/stage3/ALU.vhd
+analyze -f vhdl -lib WORK ../RISCV_1st/src/RISCV.vhd
+
+set power_preserve_rtl_hier_names true
+ungroup -all -flatten
+elaborate RISCV -architecture bdf_type -library work > elaborate_2_18ns.txt
+link
+create_clock -name MY_CLK -period 2.18 clk
+set_dont_touch_network MY_CLK
+set_clock_uncertainty 0.07 [get_clocks MY_CLK]
+set_input_delay 0.5 -max -clock MY_CLK [remove_from_collection [all_inputs] clk]
+set_output_delay 0.5 -max -clock MY_CLK [all_outputs]
+set OLOAD [load_of NangateOpenCellLibrary/BUF_X4/A]
+set_load $OLOAD [all_outputs]
+compile
+report_timing > RISCV_report_timing_2_18ns.txt
+report_area > RISCV_report_area_2_18ns.txt
+report_resources > RISCV_report_resources_2_18ns.txt
+
+change_names -hierarchy -rules verilog
+write_sdf ../netlist/RISCV.sdf
+write -f verilog -hierarchy -output ../netlist/RISCV.v
+write_sdc ../netlist/RISCV.sdc

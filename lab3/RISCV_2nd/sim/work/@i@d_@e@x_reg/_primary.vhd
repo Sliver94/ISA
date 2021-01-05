@@ -1,0 +1,44 @@
+library verilog;
+use verilog.vl_types.all;
+entity ID_EX_reg is
+    port(
+        clk             : in     vl_logic;
+        rst             : in     vl_logic;
+        en              : in     vl_logic;
+        RegWrite_in     : in     vl_logic;
+        MemtoReg_in     : in     vl_logic;
+        MemRead_in      : in     vl_logic;
+        MemWrite_in     : in     vl_logic;
+        Branch_in       : in     vl_logic;
+        ALUSrcA_in      : in     vl_logic;
+        ALUSrcB_in      : in     vl_logic;
+        ALUOp_in        : in     vl_logic_vector(2 downto 0);
+        immediate_in    : in     vl_logic_vector(31 downto 0);
+        read_data1_in   : in     vl_logic_vector(31 downto 0);
+        read_data2_in   : in     vl_logic_vector(31 downto 0);
+        instruction_address_in: in     vl_logic_vector(31 downto 0);
+        write_register_in: in     vl_logic_vector(4 downto 0);
+        read_address1_in: in     vl_logic_vector(4 downto 0);
+        read_address2_in: in     vl_logic_vector(4 downto 0);
+        stall_inserting : in     vl_logic;
+        next_instruction_address_in: in     vl_logic_vector(31 downto 0);
+        jal_control_in  : in     vl_logic;
+        RegWrite_out    : out    vl_logic;
+        MemtoReg_out    : out    vl_logic;
+        MemRead_out     : out    vl_logic;
+        MemWrite_out    : out    vl_logic;
+        Branch_out      : out    vl_logic;
+        ALUSrcA_out     : out    vl_logic;
+        ALUSrcB_out     : out    vl_logic;
+        ALUOp_out       : out    vl_logic_vector(2 downto 0);
+        immediate_out   : out    vl_logic_vector(31 downto 0);
+        read_data1_out  : out    vl_logic_vector(31 downto 0);
+        read_data2_out  : out    vl_logic_vector(31 downto 0);
+        instruction_address_out: out    vl_logic_vector(31 downto 0);
+        write_register_out: out    vl_logic_vector(4 downto 0);
+        read_address1_out: out    vl_logic_vector(4 downto 0);
+        read_address2_out: out    vl_logic_vector(4 downto 0);
+        next_instruction_address_out: out    vl_logic_vector(31 downto 0);
+        jal_control_out : out    vl_logic
+    );
+end ID_EX_reg;

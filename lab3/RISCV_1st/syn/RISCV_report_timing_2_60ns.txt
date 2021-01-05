@@ -1,0 +1,127 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'RISCV' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RISCV
+Version: O-2018.06-SP4
+Date   : Wed Dec 30 11:19:55 2020
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: b2v_MEM_WB_reg_inst/write_register_out_reg[3]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: b2v_EX_MEM_inst/ZeroFlag_out_reg
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RISCV              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  b2v_MEM_WB_reg_inst/write_register_out_reg[3]/CK (DFF_X2)
+                                                          0.00       0.00 r
+  b2v_MEM_WB_reg_inst/write_register_out_reg[3]/Q (DFF_X2)
+                                                          0.10       0.10 f
+  b2v_MEM_WB_reg_inst/write_register_out[3] (MEM_WB_reg)
+                                                          0.00       0.10 f
+  b2v_forwarding_unit_inst/write_address_stage5[3] (forwarding_unit)
+                                                          0.00       0.10 f
+  b2v_forwarding_unit_inst/U38/Z (XOR2_X1)                0.08       0.18 f
+  b2v_forwarding_unit_inst/U4/ZN (OR3_X1)                 0.08       0.26 f
+  b2v_forwarding_unit_inst/U9/ZN (NOR2_X1)                0.05       0.31 r
+  b2v_forwarding_unit_inst/forwardA[1] (forwarding_unit)
+                                                          0.00       0.31 r
+  b2v_Amux_forwarding_inst/sel[1] (my_mux32_0)            0.00       0.31 r
+  b2v_Amux_forwarding_inst/U21/Z (BUF_X1)                 0.05       0.36 r
+  b2v_Amux_forwarding_inst/U20/ZN (NOR2_X1)               0.03       0.39 f
+  b2v_Amux_forwarding_inst/U34/ZN (AOI222_X1)             0.11       0.50 r
+  b2v_Amux_forwarding_inst/U35/ZN (INV_X1)                0.03       0.53 f
+  b2v_Amux_forwarding_inst/z[0] (my_mux32_0)              0.00       0.53 f
+  b2v_ALU_inst/A[0] (ALU)                                 0.00       0.53 f
+  b2v_ALU_inst/r300/A[0] (ALU_DW01_add_1)                 0.00       0.53 f
+  b2v_ALU_inst/r300/U187/ZN (AND2_X1)                     0.04       0.57 f
+  b2v_ALU_inst/r300/U345/ZN (AOI21_X1)                    0.04       0.61 r
+  b2v_ALU_inst/r300/U376/ZN (OAI21_X1)                    0.03       0.65 f
+  b2v_ALU_inst/r300/U248/ZN (AOI21_X1)                    0.04       0.69 r
+  b2v_ALU_inst/r300/U384/ZN (OAI21_X1)                    0.03       0.72 f
+  b2v_ALU_inst/r300/U246/ZN (AOI21_X1)                    0.04       0.76 r
+  b2v_ALU_inst/r300/U383/ZN (OAI21_X1)                    0.03       0.80 f
+  b2v_ALU_inst/r300/U244/ZN (AOI21_X1)                    0.04       0.84 r
+  b2v_ALU_inst/r300/U375/ZN (OAI21_X1)                    0.03       0.87 f
+  b2v_ALU_inst/r300/U353/ZN (AOI21_X1)                    0.04       0.91 r
+  b2v_ALU_inst/r300/U374/ZN (OAI21_X1)                    0.03       0.95 f
+  b2v_ALU_inst/r300/U363/ZN (AOI21_X1)                    0.04       0.99 r
+  b2v_ALU_inst/r300/U368/ZN (OAI21_X1)                    0.03       1.02 f
+  b2v_ALU_inst/r300/U362/ZN (AOI21_X1)                    0.04       1.06 r
+  b2v_ALU_inst/r300/U382/ZN (OAI21_X1)                    0.03       1.10 f
+  b2v_ALU_inst/r300/U251/ZN (AOI21_X1)                    0.04       1.14 r
+  b2v_ALU_inst/r300/U381/ZN (OAI21_X1)                    0.03       1.17 f
+  b2v_ALU_inst/r300/U370/ZN (AOI21_X1)                    0.04       1.21 r
+  b2v_ALU_inst/r300/U367/ZN (INV_X1)                      0.03       1.24 f
+  b2v_ALU_inst/r300/U220/ZN (NAND2_X1)                    0.04       1.28 r
+  b2v_ALU_inst/r300/U222/ZN (NAND3_X1)                    0.04       1.32 f
+  b2v_ALU_inst/r300/U230/ZN (NAND2_X1)                    0.03       1.35 r
+  b2v_ALU_inst/r300/U158/ZN (NAND3_X1)                    0.04       1.39 f
+  b2v_ALU_inst/r300/U200/ZN (NAND2_X1)                    0.04       1.43 r
+  b2v_ALU_inst/r300/U157/ZN (NAND3_X1)                    0.04       1.46 f
+  b2v_ALU_inst/r300/U235/ZN (NAND2_X1)                    0.04       1.50 r
+  b2v_ALU_inst/r300/U238/ZN (NAND3_X1)                    0.04       1.54 f
+  b2v_ALU_inst/r300/U179/ZN (NAND2_X1)                    0.04       1.57 r
+  b2v_ALU_inst/r300/U181/ZN (NAND3_X1)                    0.04       1.61 f
+  b2v_ALU_inst/r300/U329/ZN (NAND2_X1)                    0.03       1.64 r
+  b2v_ALU_inst/r300/U241/ZN (NAND3_X1)                    0.05       1.69 f
+  b2v_ALU_inst/r300/U155/ZN (NAND2_X1)                    0.04       1.73 r
+  b2v_ALU_inst/r300/U190/ZN (NAND3_X1)                    0.03       1.76 f
+  b2v_ALU_inst/r300/U206/ZN (NAND2_X1)                    0.03       1.79 r
+  b2v_ALU_inst/r300/U209/ZN (NAND3_X1)                    0.04       1.83 f
+  b2v_ALU_inst/r300/U214/ZN (NAND2_X1)                    0.04       1.87 r
+  b2v_ALU_inst/r300/U216/ZN (NAND3_X1)                    0.04       1.90 f
+  b2v_ALU_inst/r300/U349/ZN (NAND2_X1)                    0.04       1.94 r
+  b2v_ALU_inst/r300/U351/ZN (NAND3_X1)                    0.04       1.98 f
+  b2v_ALU_inst/r300/U357/ZN (NAND2_X1)                    0.04       2.01 r
+  b2v_ALU_inst/r300/U167/ZN (NAND3_X1)                    0.04       2.05 f
+  b2v_ALU_inst/r300/U194/ZN (NAND2_X1)                    0.03       2.08 r
+  b2v_ALU_inst/r300/U183/ZN (NAND3_X1)                    0.04       2.13 f
+  b2v_ALU_inst/r300/U224/ZN (NAND2_X1)                    0.03       2.16 r
+  b2v_ALU_inst/r300/U226/ZN (NAND3_X1)                    0.04       2.19 f
+  b2v_ALU_inst/r300/U314/ZN (XNOR2_X1)                    0.05       2.25 f
+  b2v_ALU_inst/r300/SUM[31] (ALU_DW01_add_1)              0.00       2.25 f
+  b2v_ALU_inst/U102/ZN (INV_X1)                           0.03       2.28 r
+  b2v_ALU_inst/U13/ZN (OAI221_X1)                         0.04       2.32 f
+  b2v_ALU_inst/U21/ZN (NOR2_X1)                           0.04       2.35 r
+  b2v_ALU_inst/U20/ZN (NAND3_X1)                          0.03       2.39 f
+  b2v_ALU_inst/U292/ZN (OAI21_X1)                         0.04       2.43 r
+  b2v_ALU_inst/ZeroOut (ALU)                              0.00       2.43 r
+  b2v_EX_MEM_inst/ZeroFlag_in (EX_MEM_reg)                0.00       2.43 r
+  b2v_EX_MEM_inst/U235/ZN (AOI22_X1)                      0.04       2.46 f
+  b2v_EX_MEM_inst/U236/ZN (INV_X1)                        0.03       2.49 r
+  b2v_EX_MEM_inst/ZeroFlag_out_reg/D (DFF_X1)             0.01       2.50 r
+  data arrival time                                                  2.50
+
+  clock MY_CLK (rise edge)                                2.60       2.60
+  clock network delay (ideal)                             0.00       2.60
+  clock uncertainty                                      -0.07       2.53
+  b2v_EX_MEM_inst/ZeroFlag_out_reg/CK (DFF_X1)            0.00       2.53 r
+  library setup time                                     -0.03       2.50
+  data required time                                                 2.50
+  --------------------------------------------------------------------------
+  data required time                                                 2.50
+  data arrival time                                                 -2.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

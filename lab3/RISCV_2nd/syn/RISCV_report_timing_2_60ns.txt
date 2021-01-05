@@ -1,0 +1,130 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'RISCV' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RISCV
+Version: O-2018.06-SP4
+Date   : Wed Dec 30 12:05:37 2020
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: b2v_ID_EX_reg_inst/immediate_out_reg[0]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: b2v_EX_MEM_inst/branch_address_out_reg[31]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RISCV              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  b2v_ID_EX_reg_inst/immediate_out_reg[0]/CK (DFF_X1)     0.00       0.00 r
+  b2v_ID_EX_reg_inst/immediate_out_reg[0]/Q (DFF_X1)      0.09       0.09 f
+  b2v_ID_EX_reg_inst/immediate_out[0] (ID_EX_reg)         0.00       0.09 f
+  b2v_address_adder_inst/offset[0] (address_adder)        0.00       0.09 f
+  b2v_address_adder_inst/add_19/B[0] (address_adder_DW01_add_0)
+                                                          0.00       0.09 f
+  b2v_address_adder_inst/add_19/U116/ZN (AND2_X1)         0.05       0.14 f
+  b2v_address_adder_inst/add_19/U20/ZN (NAND2_X1)         0.03       0.17 r
+  b2v_address_adder_inst/add_19/U22/ZN (NAND3_X1)         0.03       0.20 f
+  b2v_address_adder_inst/add_19/U78/ZN (NAND2_X1)         0.03       0.23 r
+  b2v_address_adder_inst/add_19/U81/ZN (NAND3_X1)         0.04       0.27 f
+  b2v_address_adder_inst/add_19/U113/ZN (NAND2_X1)        0.04       0.30 r
+  b2v_address_adder_inst/add_19/U94/ZN (NAND3_X1)         0.04       0.34 f
+  b2v_address_adder_inst/add_19/U121/ZN (NAND2_X1)        0.04       0.37 r
+  b2v_address_adder_inst/add_19/U124/ZN (NAND3_X1)        0.04       0.41 f
+  b2v_address_adder_inst/add_19/U128/ZN (NAND2_X1)        0.04       0.44 r
+  b2v_address_adder_inst/add_19/U24/ZN (NAND3_X1)         0.04       0.48 f
+  b2v_address_adder_inst/add_19/U43/ZN (NAND2_X1)         0.04       0.52 r
+  b2v_address_adder_inst/add_19/U17/ZN (NAND3_X1)         0.04       0.56 f
+  b2v_address_adder_inst/add_19/U152/ZN (NAND2_X1)        0.04       0.60 r
+  b2v_address_adder_inst/add_19/U72/ZN (NAND3_X1)         0.04       0.63 f
+  b2v_address_adder_inst/add_19/U170/ZN (NAND2_X1)        0.04       0.67 r
+  b2v_address_adder_inst/add_19/U97/ZN (NAND3_X1)         0.04       0.70 f
+  b2v_address_adder_inst/add_19/U176/ZN (NAND2_X1)        0.04       0.74 r
+  b2v_address_adder_inst/add_19/U179/ZN (NAND3_X1)        0.04       0.78 f
+  b2v_address_adder_inst/add_19/U134/ZN (NAND2_X1)        0.03       0.81 r
+  b2v_address_adder_inst/add_19/U136/ZN (NAND3_X1)        0.04       0.85 f
+  b2v_address_adder_inst/add_19/U67/ZN (NAND2_X1)         0.04       0.89 r
+  b2v_address_adder_inst/add_19/U30/ZN (NAND3_X1)         0.04       0.92 f
+  b2v_address_adder_inst/add_19/U106/ZN (NAND2_X1)        0.03       0.96 r
+  b2v_address_adder_inst/add_19/U18/ZN (NAND3_X1)         0.04       1.00 f
+  b2v_address_adder_inst/add_19/U145/ZN (NAND2_X1)        0.04       1.03 r
+  b2v_address_adder_inst/add_19/U82/ZN (NAND3_X1)         0.04       1.07 f
+  b2v_address_adder_inst/add_19/U88/ZN (NAND2_X1)         0.03       1.10 r
+  b2v_address_adder_inst/add_19/U91/ZN (NAND3_X1)         0.04       1.14 f
+  b2v_address_adder_inst/add_19/U101/ZN (NAND2_X1)        0.03       1.18 r
+  b2v_address_adder_inst/add_19/U103/ZN (NAND3_X1)        0.04       1.21 f
+  b2v_address_adder_inst/add_19/U139/ZN (NAND2_X1)        0.04       1.25 r
+  b2v_address_adder_inst/add_19/U48/ZN (NAND3_X1)         0.04       1.29 f
+  b2v_address_adder_inst/add_19/U60/ZN (NAND2_X1)         0.04       1.33 r
+  b2v_address_adder_inst/add_19/U63/ZN (NAND3_X1)         0.04       1.36 f
+  b2v_address_adder_inst/add_19/U194/ZN (NAND2_X1)        0.03       1.40 r
+  b2v_address_adder_inst/add_19/U196/ZN (NAND3_X1)        0.04       1.44 f
+  b2v_address_adder_inst/add_19/U212/ZN (NAND2_X1)        0.03       1.47 r
+  b2v_address_adder_inst/add_19/U161/ZN (NAND3_X1)        0.04       1.51 f
+  b2v_address_adder_inst/add_19/U205/ZN (NAND2_X1)        0.04       1.54 r
+  b2v_address_adder_inst/add_19/U96/ZN (NAND3_X1)         0.04       1.58 f
+  b2v_address_adder_inst/add_19/U218/ZN (NAND2_X1)        0.04       1.62 r
+  b2v_address_adder_inst/add_19/U163/ZN (NAND3_X1)        0.04       1.66 f
+  b2v_address_adder_inst/add_19/U224/ZN (NAND2_X1)        0.04       1.69 r
+  b2v_address_adder_inst/add_19/U227/ZN (NAND3_X1)        0.04       1.73 f
+  b2v_address_adder_inst/add_19/U230/ZN (NAND2_X1)        0.04       1.77 r
+  b2v_address_adder_inst/add_19/U46/ZN (NAND3_X1)         0.04       1.80 f
+  b2v_address_adder_inst/add_19/U54/ZN (NAND2_X1)         0.04       1.84 r
+  b2v_address_adder_inst/add_19/U57/ZN (NAND3_X1)         0.04       1.88 f
+  b2v_address_adder_inst/add_19/U188/ZN (NAND2_X1)        0.04       1.92 r
+  b2v_address_adder_inst/add_19/U158/ZN (NAND3_X1)        0.04       1.96 f
+  b2v_address_adder_inst/add_19/U236/ZN (NAND2_X1)        0.04       1.99 r
+  b2v_address_adder_inst/add_19/U239/ZN (NAND3_X1)        0.04       2.03 f
+  b2v_address_adder_inst/add_19/U249/ZN (NAND2_X1)        0.03       2.06 r
+  b2v_address_adder_inst/add_19/U157/ZN (NAND3_X1)        0.05       2.10 f
+  b2v_address_adder_inst/add_19/U1/ZN (NAND2_X1)          0.04       2.14 r
+  b2v_address_adder_inst/add_19/U33/ZN (NAND3_X1)         0.03       2.17 f
+  b2v_address_adder_inst/add_19/U242/ZN (NAND2_X1)        0.03       2.21 r
+  b2v_address_adder_inst/add_19/U245/ZN (NAND3_X1)        0.04       2.25 f
+  b2v_address_adder_inst/add_19/U253/ZN (NAND2_X1)        0.03       2.28 r
+  b2v_address_adder_inst/add_19/U35/ZN (AND3_X1)          0.05       2.33 r
+  b2v_address_adder_inst/add_19/U34/ZN (XNOR2_X1)         0.05       2.38 r
+  b2v_address_adder_inst/add_19/SUM[31] (address_adder_DW01_add_0)
+                                                          0.00       2.38 r
+  b2v_address_adder_inst/address_adder_Out[31] (address_adder)
+                                                          0.00       2.38 r
+  b2v_address_adder_output_mux_inst/a[31] (my_mux_6)      0.00       2.38 r
+  b2v_address_adder_output_mux_inst/U75/Z (MUX2_X1)       0.05       2.43 r
+  b2v_address_adder_output_mux_inst/z[31] (my_mux_6)      0.00       2.43 r
+  b2v_EX_MEM_inst/branch_address_in[31] (EX_MEM_reg)      0.00       2.43 r
+  b2v_EX_MEM_inst/U8/ZN (INV_X1)                          0.02       2.45 f
+  b2v_EX_MEM_inst/U7/ZN (OAI22_X1)                        0.04       2.48 r
+  b2v_EX_MEM_inst/branch_address_out_reg[31]/D (DFF_X2)
+                                                          0.01       2.49 r
+  data arrival time                                                  2.49
+
+  clock MY_CLK (rise edge)                                2.60       2.60
+  clock network delay (ideal)                             0.00       2.60
+  clock uncertainty                                      -0.07       2.53
+  b2v_EX_MEM_inst/branch_address_out_reg[31]/CK (DFF_X2)
+                                                          0.00       2.53 r
+  library setup time                                     -0.04       2.49
+  data required time                                                 2.49
+  --------------------------------------------------------------------------
+  data required time                                                 2.49
+  data arrival time                                                 -2.49
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

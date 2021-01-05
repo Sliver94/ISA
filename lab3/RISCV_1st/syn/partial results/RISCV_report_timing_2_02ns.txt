@@ -1,0 +1,115 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'RISCV' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RISCV
+Version: O-2018.06-SP4
+Date   : Tue Dec 29 23:33:36 2020
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: b2v_EX_MEM_inst/write_register_out_reg[3]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: b2v_EX_MEM_inst/ALU_output_out_reg[31]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RISCV              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  b2v_EX_MEM_inst/write_register_out_reg[3]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  b2v_EX_MEM_inst/write_register_out_reg[3]/Q (DFF_X1)
+                                                          0.09       0.09 f
+  b2v_EX_MEM_inst/write_register_out[3] (EX_MEM_reg)      0.00       0.09 f
+  b2v_forwarding_unit_inst/write_address_stage4[3] (forwarding_unit)
+                                                          0.00       0.09 f
+  b2v_forwarding_unit_inst/U17/ZN (XNOR2_X1)              0.06       0.14 f
+  b2v_forwarding_unit_inst/U15/ZN (AND3_X1)               0.04       0.19 f
+  b2v_forwarding_unit_inst/U24/ZN (NAND4_X1)              0.03       0.22 r
+  b2v_forwarding_unit_inst/U26/ZN (NAND4_X1)              0.04       0.25 f
+  b2v_forwarding_unit_inst/U19/ZN (NOR2_X1)               0.05       0.30 r
+  b2v_forwarding_unit_inst/forwardB[1] (forwarding_unit)
+                                                          0.00       0.30 r
+  b2v_Bmux_forwarding_inst/sel[1] (my_mux32_1)            0.00       0.30 r
+  b2v_Bmux_forwarding_inst/U29/ZN (INV_X1)                0.03       0.33 f
+  b2v_Bmux_forwarding_inst/U33/ZN (AND2_X2)               0.05       0.38 f
+  b2v_Bmux_forwarding_inst/U40/ZN (AOI222_X1)             0.11       0.49 r
+  b2v_Bmux_forwarding_inst/U41/ZN (INV_X1)                0.04       0.53 f
+  b2v_Bmux_forwarding_inst/z[5] (my_mux32_1)              0.00       0.53 f
+  b2v_ALU_inst/B[5] (ALU)                                 0.00       0.53 f
+  b2v_ALU_inst/r300/B[5] (ALU_DW01_add_1)                 0.00       0.53 f
+  b2v_ALU_inst/r300/U225/ZN (NOR2_X1)                     0.05       0.58 r
+  b2v_ALU_inst/r300/U402/ZN (OAI21_X1)                    0.03       0.61 f
+  b2v_ALU_inst/r300/U384/ZN (AOI21_X1)                    0.04       0.65 r
+  b2v_ALU_inst/r300/U421/ZN (OAI21_X1)                    0.04       0.69 f
+  b2v_ALU_inst/r300/U274/ZN (AOI21_X1)                    0.04       0.73 r
+  b2v_ALU_inst/r300/U444/ZN (OAI21_X1)                    0.03       0.76 f
+  b2v_ALU_inst/r300/U267/ZN (AOI21_X1)                    0.04       0.80 r
+  b2v_ALU_inst/r300/U427/ZN (OAI21_X1)                    0.03       0.84 f
+  b2v_ALU_inst/r300/U271/ZN (AOI21_X1)                    0.04       0.88 r
+  b2v_ALU_inst/r300/U443/ZN (OAI21_X1)                    0.03       0.91 f
+  b2v_ALU_inst/r300/U266/ZN (AOI21_X1)                    0.04       0.95 r
+  b2v_ALU_inst/r300/U442/ZN (OAI21_X1)                    0.03       0.98 f
+  b2v_ALU_inst/r300/U412/ZN (AOI21_X1)                    0.04       1.03 r
+  b2v_ALU_inst/r300/U426/ZN (OAI21_X1)                    0.03       1.06 f
+  b2v_ALU_inst/r300/U380/ZN (AOI21_X1)                    0.04       1.10 r
+  b2v_ALU_inst/r300/U420/ZN (OAI21_X1)                    0.03       1.13 f
+  b2v_ALU_inst/r300/U268/ZN (AOI21_X1)                    0.04       1.18 r
+  b2v_ALU_inst/r300/U417/ZN (OAI21_X1)                    0.03       1.21 f
+  b2v_ALU_inst/r300/U272/ZN (AOI21_X1)                    0.04       1.25 r
+  b2v_ALU_inst/r300/U441/ZN (OAI21_X1)                    0.03       1.28 f
+  b2v_ALU_inst/r300/U440/ZN (AOI21_X1)                    0.04       1.32 r
+  b2v_ALU_inst/r300/U432/ZN (INV_X1)                      0.03       1.35 f
+  b2v_ALU_inst/r300/U391/ZN (NAND2_X1)                    0.04       1.39 r
+  b2v_ALU_inst/r300/U207/ZN (NAND3_X1)                    0.04       1.43 f
+  b2v_ALU_inst/r300/U255/ZN (NAND2_X1)                    0.04       1.47 r
+  b2v_ALU_inst/r300/U206/ZN (NAND3_X1)                    0.04       1.50 f
+  b2v_ALU_inst/r300/U261/ZN (NAND2_X1)                    0.04       1.54 r
+  b2v_ALU_inst/r300/U262/ZN (NAND3_X1)                    0.04       1.58 f
+  b2v_ALU_inst/r300/U242/ZN (NAND2_X1)                    0.04       1.62 r
+  b2v_ALU_inst/r300/U239/ZN (NAND3_X1)                    0.04       1.65 f
+  b2v_ALU_inst/r300/U245/ZN (NAND2_X1)                    0.03       1.68 r
+  b2v_ALU_inst/r300/U247/ZN (NAND3_X1)                    0.04       1.72 f
+  b2v_ALU_inst/r300/U233/ZN (XNOR2_X1)                    0.06       1.78 f
+  b2v_ALU_inst/r300/SUM[31] (ALU_DW01_add_1)              0.00       1.78 f
+  b2v_ALU_inst/U18/ZN (AOI22_X1)                          0.05       1.82 r
+  b2v_ALU_inst/U37/ZN (NAND2_X1)                          0.03       1.85 f
+  b2v_ALU_inst/ALU_Out[31] (ALU)                          0.00       1.85 f
+  b2v_ALU_output_mux_inst/a[31] (my_mux_5)                0.00       1.85 f
+  b2v_ALU_output_mux_inst/U62/Z (MUX2_X1)                 0.07       1.92 f
+  b2v_ALU_output_mux_inst/z[31] (my_mux_5)                0.00       1.92 f
+  b2v_EX_MEM_inst/ALU_output_in[31] (EX_MEM_reg)          0.00       1.92 f
+  b2v_EX_MEM_inst/U10/ZN (AOI22_X1)                       0.04       1.97 r
+  b2v_EX_MEM_inst/U235/ZN (INV_X1)                        0.02       1.99 f
+  b2v_EX_MEM_inst/ALU_output_out_reg[31]/D (DFF_X1)       0.01       2.00 f
+  data arrival time                                                  2.00
+
+  clock MY_CLK (rise edge)                                2.02       2.02
+  clock network delay (ideal)                             0.00       2.02
+  clock uncertainty                                      -0.07       1.95
+  b2v_EX_MEM_inst/ALU_output_out_reg[31]/CK (DFF_X1)      0.00       1.95 r
+  library setup time                                     -0.04       1.91
+  data required time                                                 1.91
+  --------------------------------------------------------------------------
+  data required time                                                 1.91
+  data arrival time                                                 -2.00
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.09
+
+
+1

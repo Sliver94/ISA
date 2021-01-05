@@ -1,0 +1,13 @@
+ 
+****************************************
+Report : resources
+Design : RISCV
+Version: O-2018.06-SP4
+Date   : Tue Dec 29 20:57:38 2020
+****************************************
+
+
+No resource sharing information to report.
+
+No implementations to report
+1
