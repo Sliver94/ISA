@@ -1,0 +1,14 @@
+vcom -93 -work ./work ../RISCV_ABS/tb/clk_gen.vhd
+vcom -93 -work ./work ../RISCV_ABS/tb/data_memory.vhd
+vcom -93 -work ./work ../RISCV_ABS/tb/instruction_memory.vhd
+vlog -work ./work ../innovus/RISCV.v
+vlog -work ./work ../RISCV_ABS/tb/RISCV_tb.v
+vsim -L /software/dk/nangate45/verilog/msim6.2g work.RISCV_tb
+vsim -L /software/dk/nangate45/verilog/msim6.2g -sdftyp /RISCV_tb/UUT=../innovus/RISCV.sdf work.RISCV_tb
+vcd file ../vcd2/RISCV_innovus.vcd
+vcd add /RISCV_tb/UUT/*
+
+add wave sim:/RISCV_tb/*
+add wave sim:/RISCV_tb/UUT/b2v_registers_inst/registers_array
+add wave sim:/RISCV_tb/DM/memory_array
+run 2 us

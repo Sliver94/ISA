@@ -1,0 +1,477 @@
+m255
+13
+cModel Technology
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim_syn
+T_opt
+V@Y4k83OfHFG:MS28Ui4oG1
+06 8 4 ./work RISCV_tb fast 0
+o-quiet -auto_acc_if_foreign -work work -L /software/dk/nangate45/verilog/msim6.2g -sdftyp /RISCV_tb/UUT=../netlist_syn/RISCV.sdf -suppress 1948
+tExplicit 1
+OE;O;6.2g;35
+vABS_unit
+I`RiL0PMeVWa9]z9cnTToX3
+V8_J`J1T6b>:J0W0_kWRLS1
+w1613581701
+8../netlist_syn/RISCV.v
+F../netlist_syn/RISCV.v
+L0 203
+V8_J`J1T6b>:J0W0_kWRLS1
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+n@a@b@s_unit
+vABS_unit_DW01_sub_0
+INBXH^_OgBaK:d_M4K;5LY0
+VIEMVRgSH`e:a]Ci10Fm@62
+w1613581701
+8../netlist_syn/RISCV.v
+F../netlist_syn/RISCV.v
+L0 94
+VIEMVRgSH`e:a]Ci10Fm@62
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+n@a@b@s_unit_@d@w01_sub_0
+vadder_4
+I[99?0mW3;HJHIUzBhzMJR0
+Vg2]?Se_7i_PK12<Tmf`7`3
+w1613581701
+8../netlist_syn/RISCV.v
+F../netlist_syn/RISCV.v
+L0 390
+Vg2]?Se_7i_PK12<Tmf`7`3
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+vadder_4_DW01_add_0
+I?@e8VicfF:V^8hZ]<C8Nn0
+V`T@NJ7b5S76MDnk830zn_1
+w1613581701
+8../netlist_syn/RISCV.v
+F../netlist_syn/RISCV.v
+L0 318
+V`T@NJ7b5S76MDnk830zn_1
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+nadder_4_@d@w01_add_0
+vaddress_adder
+I??WRCHd1>U<KJ=U_eAnOS1
+VRk:O:5Q^5?_42Qj7o8XQ71
+w1613581701
+8../netlist_syn/RISCV.v
+F../netlist_syn/RISCV.v
+L0 685
+VRk:O:5Q^5?_42Qj7o8XQ71
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+vaddress_adder_DW01_add_0
+I_bU7I<nf=J_nQ^RL9ZRo41
+V<X=NNGDfhog3U^lI`n_;I0
+w1613581701
+8../netlist_syn/RISCV.v
+F../netlist_syn/RISCV.v
+L0 402
+V<X=NNGDfhog3U^lI`n_;I0
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+naddress_adder_@d@w01_add_0
+vALU
+IEX]V6;3JPJI^T2j[5nDDd2
+V5?ZOQT83f;=gT:Hb:3UM40
+w1613581701
+8../netlist_syn/RISCV.v
+F../netlist_syn/RISCV.v
+L0 1206
+V5?ZOQT83f;=gT:Hb:3UM40
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+n@a@l@u
+vALU_DW01_add_1
+I:XZoS81IHZN3NEZ;6oIIP1
+ViJXMSe4Y1VdA;za<KiZET0
+w1613581701
+8../netlist_syn/RISCV.v
+F../netlist_syn/RISCV.v
+L0 940
+ViJXMSe4Y1VdA;za<KiZET0
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+n@a@l@u_@d@w01_add_1
+vALU_DW_cmp_0
+IG>ljh]mYOjBgA3bnXNi>g2
+V;ReNb315gn>l]]6oMFMzK2
+w1613581701
+8../netlist_syn/RISCV.v
+F../netlist_syn/RISCV.v
+L0 784
+V;ReNb315gn>l]]6oMFMzK2
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+n@a@l@u_@d@w_cmp_0
+vbranch_control_unit
+I<2R`]Db^4c8XKfO53;Xg[1
+VeU?ULdGBK[G19cXDdOg[O3
+w1613581701
+8../netlist_syn/RISCV.v
+F../netlist_syn/RISCV.v
+L0 2237
+VeU?ULdGBK[G19cXDdOg[O3
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+Eclk_gen
+w1609085187
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+8../RISCV_ABS/tb/clk_gen.vhd
+F../RISCV_ABS/tb/clk_gen.vhd
+l0
+L6
+VmLjQADRN]aU`l]n0Zijde1
+OE;C;6.2g;35
+31
+o-93 -work ./work
+tExplicit 1
+Abeh
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work clk_gen mLjQADRN]aU`l]n0Zijde1
+l19
+L13
+Vj0N8`YZ^?ob>EDh9c>nhE0
+OE;C;6.2g;35
+31
+M3 ieee std_logic_1164
+M2 ieee std_logic_arith
+M1 ieee std_logic_unsigned
+o-93 -work ./work
+tExplicit 1
+vcontrol
+IQeSH_=P5^5;Q;>PIm9jH40
+VnP?36ZU27:QbO==_Gd^^a3
+w1613581701
+8../netlist_syn/RISCV.v
+F../netlist_syn/RISCV.v
+L0 2265
+VnP?36ZU27:QbO==_Gd^^a3
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+Edata_memory
+w1609094493
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+8../RISCV_ABS/tb/data_memory.vhd
+F../RISCV_ABS/tb/data_memory.vhd
+l0
+L5
+V3QGH]i0=mV;G:X7bE>5hh2
+OE;C;6.2g;35
+31
+o-93 -work ./work
+tExplicit 1
+Artl
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work data_memory 3QGH]i0=mV;G:X7bE>5hh2
+l24
+L18
+V7P:I40KMNdDiFmNJzVLd91
+OE;C;6.2g;35
+31
+M2 ieee std_logic_1164
+M1 ieee numeric_std
+o-93 -work ./work
+tExplicit 1
+vEX_MEM_reg
+Izl[dWF0UHOY`dZ]V_kLBG2
+VYC6CZAXInZeF9;z9`iFVj3
+w1613581701
+8../netlist_syn/RISCV.v
+F../netlist_syn/RISCV.v
+L0 2337
+VYC6CZAXInZeF9;z9`iFVj3
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+n@e@x_@m@e@m_reg
+vforwarding_unit
+IUT]eA01ffi`OY190kf6D?1
+Vn3OASR6B8kmHDcOnO;alA0
+w1613581701
+8../netlist_syn/RISCV.v
+F../netlist_syn/RISCV.v
+L0 2897
+Vn3OASR6B8kmHDcOnO;alA0
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+vhazard_detection_unit
+I78BK1D4JD7i;MjR]gPz>Z2
+VAfFN;f5B1a[XfAjg[89z12
+w1613581701
+8../netlist_syn/RISCV.v
+F../netlist_syn/RISCV.v
+L0 2967
+VAfFN;f5B1a[XfAjg[89z12
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+vID_EX_reg
+IRXGlUMYh;UZI[T3d[cCMQ3
+VVF`lSE5^A]He7GULGU:]D0
+w1613581701
+8../netlist_syn/RISCV.v
+F../netlist_syn/RISCV.v
+L0 3004
+VVF`lSE5^A]He7GULGU:]D0
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+n@i@d_@e@x_reg
+vIF_ID_reg
+Ih5OfXo[2iEeY7O9WVl`ZN3
+V:OP`:8A9UUoAN10JSaGa12
+w1613581701
+8../netlist_syn/RISCV.v
+F../netlist_syn/RISCV.v
+L0 3955
+V:OP`:8A9UUoAN10JSaGa12
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+n@i@f_@i@d_reg
+vimm_gen
+I66ihd=PC5B9IVI@RJlhK`0
+V]M3HzXfd3OzdHgN[@PbNY0
+w1613581701
+8../netlist_syn/RISCV.v
+F../netlist_syn/RISCV.v
+L0 4491
+V]M3HzXfd3OzdHgN[@PbNY0
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+Einstruction_memory
+w1609263040
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+8../RISCV_ABS/tb/instruction_memory.vhd
+F../RISCV_ABS/tb/instruction_memory.vhd
+l0
+L5
+VKnBP=Phe3foiib?Rl5OG43
+OE;C;6.2g;35
+31
+o-93 -work ./work
+tExplicit 1
+Artl
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work instruction_memory KnBP=Phe3foiib?Rl5OG43
+l26
+L15
+V1Un@0V^mP3Y:3biA0JY2A1
+OE;C;6.2g;35
+31
+M2 ieee std_logic_1164
+M1 ieee numeric_std
+o-93 -work ./work
+tExplicit 1
+vMEM_WB_reg
+IIY1mDJ3ZC5g7=<DlA;ze@3
+VomJTG9C5U3NaHB@SFdQd^2
+w1613581701
+8../netlist_syn/RISCV.v
+F../netlist_syn/RISCV.v
+L0 4601
+VomJTG9C5U3NaHB@SFdQd^2
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+n@m@e@m_@w@b_reg
+vmy_mux32_0
+IFd3nj?<C1Dl=z4aAAdajh0
+Vh56XneShHEI?oWQ3W00WN1
+w1613581701
+8../netlist_syn/RISCV.v
+F../netlist_syn/RISCV.v
+L0 1793
+Vh56XneShHEI?oWQ3W00WN1
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+vmy_mux32_1
+IlFJ;151Li8R<^C8YD<>lJ1
+V8AQgke@jadO>^NCSo[QKf1
+w1613581701
+8../netlist_syn/RISCV.v
+F../netlist_syn/RISCV.v
+L0 2017
+V8AQgke@jadO>^NCSo[QKf1
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+vmy_mux_0
+I655Ke9B1oOm^]e^g23GNm3
+VNnIj3hWBPU;_FgdW43bLf0
+w1613581701
+8../netlist_syn/RISCV.v
+F../netlist_syn/RISCV.v
+L0 8
+VNnIj3hWBPU;_FgdW43bLf0
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+vmy_mux_1
+I9:3494^cB3LnRV=]<nE9b1
+V:6gklhDAY]CBAi:Nf36da3
+w1613581701
+8../netlist_syn/RISCV.v
+F../netlist_syn/RISCV.v
+L0 5206
+V:6gklhDAY]CBAi:Nf36da3
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+vmy_mux_2
+II?X2GTDjgDAA]_eNIzE5N3
+VbdFYTgDXT^hcO4@VOC[RM2
+w1613581701
+8../netlist_syn/RISCV.v
+F../netlist_syn/RISCV.v
+L0 4968
+VbdFYTgDXT^hcO4@VOC[RM2
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+vmy_mux_3
+IQNW4ID<zX9B=lScG3L>=B1
+V0oRD48LD;KPB>?J_CfHDd2
+w1613581701
+8../netlist_syn/RISCV.v
+F../netlist_syn/RISCV.v
+L0 2146
+V0oRD48LD;KPB>?J_CfHDd2
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+vmy_mux_4
+IY^eGJdk^?7zVPeEjIBH<73
+VgdM[C]aeoAK7?_;F@gMRZ3
+w1613581701
+8../netlist_syn/RISCV.v
+F../netlist_syn/RISCV.v
+L0 1926
+VgdM[C]aeoAK7?_;F@gMRZ3
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+vmy_mux_5
+IL`_ChLEKf3Nkd44KK491R3
+VaJ:j75_mKa]fN3<6AVKaJ1
+w1613581701
+8../netlist_syn/RISCV.v
+F../netlist_syn/RISCV.v
+L0 1704
+VaJ:j75_mKa]fN3<6AVKaJ1
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+vmy_mux_6
+InV@ZDESZTQP[zK?C?ij>63
+V[Mg3^XO[o87`cm;TjbQ3V2
+w1613581701
+8../netlist_syn/RISCV.v
+F../netlist_syn/RISCV.v
+L0 696
+V[Mg3^XO[o87`cm;TjbQ3V2
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+vPC
+I]SCmL9jSMJkkzDGDjf>2M1
+V;H@]NdNc982YXgEe8nXbE2
+w1613581701
+8../netlist_syn/RISCV.v
+F../netlist_syn/RISCV.v
+L0 5059
+V;H@]NdNc982YXgEe8nXbE2
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+n@p@c
+vregisters
+IjMiiomP3TS[SCAD:jYUfd1
+VYO:jEbBQ:[J>INj=e1cRg3
+w1613581701
+8../netlist_syn/RISCV.v
+F../netlist_syn/RISCV.v
+L0 5297
+VYO:jEbBQ:[J>INj=e1cRg3
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+vRISCV
+I>b5nfXm:4UJL>AfE4miKe0
+VcLl89Y2adn;2G8F?H@>Wm3
+w1613581701
+8../netlist_syn/RISCV.v
+F../netlist_syn/RISCV.v
+L0 13567
+VcLl89Y2adn;2G8F?H@>Wm3
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+n@r@i@s@c@v
+vRISCV_tb
+IH[b`beS9_on=BU`IRBahJ3
+VhE4N`ZBkaoD9VRh]jmSMY1
+w1608632759
+8../RISCV_ABS/tb/RISCV_tb.v
+F../RISCV_ABS/tb/RISCV_tb.v
+L0 3
+VhE4N`ZBkaoD9VRh]jmSMY1
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+n@r@i@s@c@v_tb

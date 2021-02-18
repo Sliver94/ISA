@@ -1,0 +1,496 @@
+m255
+13
+cModel Technology
+d/home/isa04/Desktop/lab3/RISCV_1st/sim
+T_opt
+Vd2Q>T7DQ`=fiMQmO48IcJ0
+06 8 4 ./work RISCV_tb fast 0
+o-quiet -auto_acc_if_foreign -work work -L /software/dk/nangate45/verilog/msim6.2g -sdftyp /RISCV_tb/UUT=../innovus/RISCV.sdf -suppress 1948
+tExplicit 1
+OE;O;6.2g;35
+vadder_4
+II:c:WYX=5ZAlzDSS2>5^i1
+Vg2]?Se_7i_PK12<Tmf`7`3
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim_innovus
+w1613587478
+8../innovus/RISCV.v
+F../innovus/RISCV.v
+L0 231
+Vg2]?Se_7i_PK12<Tmf`7`3
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+vadder_4_DW01_add_0
+InWhNKz=A?3:OUGJL8;8Cj2
+V`T@NJ7b5S76MDnk830zn_1
+w1609323621
+8../netlist/RISCV.v
+F../netlist/RISCV.v
+L0 8
+V`T@NJ7b5S76MDnk830zn_1
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+nadder_4_@d@w01_add_0
+vadder_4_DW01_add_1
+IH40I:A:ZXn0n5d1jbF[lj2
+VL;WO2jUGCPLfWRnMiFk`:2
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim_innovus
+w1613587478
+8../innovus/RISCV.v
+F../innovus/RISCV.v
+L0 10
+VL;WO2jUGCPLfWRnMiFk`:2
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+nadder_4_@d@w01_add_1
+vaddress_adder
+IPDFdY<a52D6dRiZEoBd8i1
+VRk:O:5Q^5?_42Qj7o8XQ71
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim_innovus
+w1613587478
+8../innovus/RISCV.v
+F../innovus/RISCV.v
+L0 982
+VRk:O:5Q^5?_42Qj7o8XQ71
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+vaddress_adder_DW01_add_0
+IokR`jaB1;=dKSQg8`f2Ce1
+V<X=NNGDfhog3U^lI`n_;I0
+w1609323621
+8../netlist/RISCV.v
+F../netlist/RISCV.v
+L0 92
+V<X=NNGDfhog3U^lI`n_;I0
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+naddress_adder_@d@w01_add_0
+vaddress_adder_DW01_add_1
+I0IIL_GJ:PcTKfcfcj5nif1
+V0CPZgYC?g9M5P?Dm6iobC0
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim_innovus
+w1613587478
+8../innovus/RISCV.v
+F../innovus/RISCV.v
+L0 274
+V0CPZgYC?g9M5P?Dm6iobC0
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+naddress_adder_@d@w01_add_1
+vALU
+IWmld5lfBS>W8Gk[DV=h^a2
+V5?ZOQT83f;=gT:Hb:3UM40
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim_innovus
+w1613587478
+8../innovus/RISCV.v
+F../innovus/RISCV.v
+L0 2632
+V5?ZOQT83f;=gT:Hb:3UM40
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+n@a@l@u
+vALU_DW01_add_1
+IBVPc4BXYWRIc^]c8;;lR]2
+ViJXMSe4Y1VdA;za<KiZET0
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim_innovus
+w1613587478
+8../innovus/RISCV.v
+F../innovus/RISCV.v
+L0 1702
+ViJXMSe4Y1VdA;za<KiZET0
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+n@a@l@u_@d@w01_add_1
+vALU_DW_cmp_0
+I_Y]`TbZzXZEbR7a3:jFic3
+VEl:74SJXzzVIz7?^h8oG^2
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim_innovus
+w1613587478
+8../innovus/RISCV.v
+F../innovus/RISCV.v
+L0 1193
+VEl:74SJXzzVIz7?^h8oG^2
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+n@a@l@u_@d@w_cmp_0
+vbranch_control_unit
+I4R@<:ida?4g:?>G5cA;K_3
+VeU?ULdGBK[G19cXDdOg[O3
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim_innovus
+w1613587478
+8../innovus/RISCV.v
+F../innovus/RISCV.v
+L0 6029
+VeU?ULdGBK[G19cXDdOg[O3
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+Eclk_gen
+w1609085187
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+31
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim_innovus
+8../RISCV_ABS/tb/clk_gen.vhd
+F../RISCV_ABS/tb/clk_gen.vhd
+l0
+L6
+VmLjQADRN]aU`l]n0Zijde1
+OE;C;6.2g;35
+o-93 -work ./work
+tExplicit 1
+Abeh
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work clk_gen mLjQADRN]aU`l]n0Zijde1
+31
+M3 ieee std_logic_1164
+M2 ieee std_logic_arith
+M1 ieee std_logic_unsigned
+l19
+L13
+Vj0N8`YZ^?ob>EDh9c>nhE0
+OE;C;6.2g;35
+o-93 -work ./work
+tExplicit 1
+vcontrol
+IJBQ6U5P5b@JF<Ph8HPP[O3
+Vkm8[5AbPK0`ebN1;jd;dC2
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim_innovus
+w1613587478
+8../innovus/RISCV.v
+F../innovus/RISCV.v
+L0 11663
+Vkm8[5AbPK0`ebN1;jd;dC2
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+Edata_memory
+w1609094493
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+31
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim_innovus
+8../RISCV_ABS/tb/data_memory.vhd
+F../RISCV_ABS/tb/data_memory.vhd
+l0
+L5
+V3QGH]i0=mV;G:X7bE>5hh2
+OE;C;6.2g;35
+o-93 -work ./work
+tExplicit 1
+Artl
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work data_memory 3QGH]i0=mV;G:X7bE>5hh2
+31
+M2 ieee std_logic_1164
+M1 ieee numeric_std
+l24
+L18
+V7P:I40KMNdDiFmNJzVLd91
+OE;C;6.2g;35
+o-93 -work ./work
+tExplicit 1
+vEX_MEM_reg
+IaRVb_e84kk:V;Q?:CijD73
+VYC6CZAXInZeF9;z9`iFVj3
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim_innovus
+w1613587478
+8../innovus/RISCV.v
+F../innovus/RISCV.v
+L0 6103
+VYC6CZAXInZeF9;z9`iFVj3
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+n@e@x_@m@e@m_reg
+vforwarding_unit
+IGYf5mbZZbF:Z80HDc5l@00
+Vn3OASR6B8kmHDcOnO;alA0
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim_innovus
+w1613587478
+8../innovus/RISCV.v
+F../innovus/RISCV.v
+L0 7479
+Vn3OASR6B8kmHDcOnO;alA0
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+vhazard_detection_unit
+IgRObLkg<<:RcHlmi9f9Xz3
+VAfFN;f5B1a[XfAjg[89z12
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim_innovus
+w1613587478
+8../innovus/RISCV.v
+F../innovus/RISCV.v
+L0 7644
+VAfFN;f5B1a[XfAjg[89z12
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+vID_EX_reg
+InhYSQ<YFA=7heOlD2KYOZ2
+V7cR8aL_WG;c?6NV08]SdF3
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim_innovus
+w1613587478
+8../innovus/RISCV.v
+F../innovus/RISCV.v
+L0 7721
+V7cR8aL_WG;c?6NV08]SdF3
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+n@i@d_@e@x_reg
+vIF_ID_reg
+ITcIH>WWYE6e;IA:gW8Gm60
+V:OP`:8A9UUoAN10JSaGa12
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim_innovus
+w1613587478
+8../innovus/RISCV.v
+F../innovus/RISCV.v
+L0 10102
+V:OP`:8A9UUoAN10JSaGa12
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+n@i@f_@i@d_reg
+vimm_gen
+ICC<Q=6`JFPo:Nga;kaLFz0
+V]M3HzXfd3OzdHgN[@PbNY0
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim_innovus
+w1613587478
+8../innovus/RISCV.v
+F../innovus/RISCV.v
+L0 11301
+V]M3HzXfd3OzdHgN[@PbNY0
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+Einstruction_memory
+w1609263040
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+31
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim_innovus
+8../RISCV_ABS/tb/instruction_memory.vhd
+F../RISCV_ABS/tb/instruction_memory.vhd
+l0
+L5
+VKnBP=Phe3foiib?Rl5OG43
+OE;C;6.2g;35
+o-93 -work ./work
+tExplicit 1
+Artl
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work instruction_memory KnBP=Phe3foiib?Rl5OG43
+31
+M2 ieee std_logic_1164
+M1 ieee numeric_std
+l26
+L15
+V1Un@0V^mP3Y:3biA0JY2A1
+OE;C;6.2g;35
+o-93 -work ./work
+tExplicit 1
+vMEM_WB_reg
+I0H?QVignlHkMB`S:<=J>S2
+VomJTG9C5U3NaHB@SFdQd^2
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim_innovus
+w1613587478
+8../innovus/RISCV.v
+F../innovus/RISCV.v
+L0 11879
+VomJTG9C5U3NaHB@SFdQd^2
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+n@m@e@m_@w@b_reg
+vmy_mux32_0
+Igg6fO2oVQm;]QaVFEa3fh3
+Vh56XneShHEI?oWQ3W00WN1
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim_innovus
+w1613587478
+8../innovus/RISCV.v
+F../innovus/RISCV.v
+L0 4917
+Vh56XneShHEI?oWQ3W00WN1
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+vmy_mux32_1
+IJmAoBg?d=4WFiS<9DZ=l71
+V8AQgke@jadO>^NCSo[QKf1
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim_innovus
+w1613587478
+8../innovus/RISCV.v
+F../innovus/RISCV.v
+L0 5464
+V8AQgke@jadO>^NCSo[QKf1
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+vmy_mux_0
+IaAjbk9WZL_RlbEnMeW[3d1
+Vic6jd6zhhjod@k7YFE4gD3
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim_innovus
+w1613587478
+8../innovus/RISCV.v
+F../innovus/RISCV.v
+L0 996
+Vic6jd6zhhjod@k7YFE4gD3
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+vmy_mux_1
+I07al_QNf5oNZD9`kLjhc01
+V:6gklhDAY]CBAi:Nf36da3
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim_innovus
+w1613587478
+8../innovus/RISCV.v
+F../innovus/RISCV.v
+L0 13352
+V:6gklhDAY]CBAi:Nf36da3
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+vmy_mux_2
+IlT5<7P^S9Jf`DNAl=14lG1
+VbdFYTgDXT^hcO4@VOC[RM2
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim_innovus
+w1613587478
+8../innovus/RISCV.v
+F../innovus/RISCV.v
+L0 12793
+VbdFYTgDXT^hcO4@VOC[RM2
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+vmy_mux_3
+IP^?a5Y:Uf6F=BX=ANU[[k1
+V0oRD48LD;KPB>?J_CfHDd2
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim_innovus
+w1613587478
+8../innovus/RISCV.v
+F../innovus/RISCV.v
+L0 5889
+V0oRD48LD;KPB>?J_CfHDd2
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+vmy_mux_4
+IeH[6eDQ^^FSankL]iBEUN0
+VgdM[C]aeoAK7?_;F@gMRZ3
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim_innovus
+w1613587478
+8../innovus/RISCV.v
+F../innovus/RISCV.v
+L0 5319
+VgdM[C]aeoAK7?_;F@gMRZ3
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+vmy_mux_5
+I8<zo58mld91215L5dGd>M0
+VCO`L6cCdL?eJl?A1n2;WM0
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim_innovus
+w1613587478
+8../innovus/RISCV.v
+F../innovus/RISCV.v
+L0 4720
+VCO`L6cCdL?eJl?A1n2;WM0
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+vPC
+IUS[VonBFIoJLeCP:]W>fQ1
+V;H@]NdNc982YXgEe8nXbE2
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim_innovus
+w1613587478
+8../innovus/RISCV.v
+F../innovus/RISCV.v
+L0 12938
+V;H@]NdNc982YXgEe8nXbE2
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+n@p@c
+vregisters
+I`lH05Uj_8FfclGEeS_1_o0
+VYO:jEbBQ:[J>INj=e1cRg3
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim_innovus
+w1613587478
+8../innovus/RISCV.v
+F../innovus/RISCV.v
+L0 13588
+VYO:jEbBQ:[J>INj=e1cRg3
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+vRISCV
+Io0jb3G@zf8;YbkRm5CR:D3
+VcLl89Y2adn;2G8F?H@>Wm3
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim_innovus
+w1613587478
+8../innovus/RISCV.v
+F../innovus/RISCV.v
+L0 36363
+VcLl89Y2adn;2G8F?H@>Wm3
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+n@r@i@s@c@v
+vRISCV_tb
+IH[b`beS9_on=BU`IRBahJ3
+VhE4N`ZBkaoD9VRh]jmSMY1
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim_innovus
+w1608632759
+8../RISCV_ABS/tb/RISCV_tb.v
+F../RISCV_ABS/tb/RISCV_tb.v
+L0 3
+VhE4N`ZBkaoD9VRh]jmSMY1
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+n@r@i@s@c@v_tb

@@ -3,18 +3,19 @@ m255
 cModel Technology
 d/home/isa04/Desktop/lab3/RISCV_1st/sim
 T_opt
-VPf9K`]T63:C7Sd;:;X0lo0
+V6bEG`j0B8kb6]N:`?BecY3
 06 8 4 ./work RISCV_tb fast 0
 o-quiet -auto_acc_if_foreign -work work -L /software/dk/nangate45/verilog/msim6.2g -sdftyp /RISCV_tb/UUT=../netlist/RISCV.sdf -suppress 1948
 tExplicit 1
 OE;O;6.2g;35
 vadder_4
-IK568?]OV];`3:JWg`eFge3
+IE@CnRQR[i=;_O_Sf2jfj;1
 Vg2]?Se_7i_PK12<Tmf`7`3
-w1609323621
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim
+w1609271882
 8../netlist/RISCV.v
 F../netlist/RISCV.v
-L0 80
+L0 73
 Vg2]?Se_7i_PK12<Tmf`7`3
 OE;L;6.2g;35
 r1
@@ -33,13 +34,28 @@ r1
 31
 o-work ./work
 nadder_4_@d@w01_add_0
-vaddress_adder
-If]LW3UK?^kAL6XQ@__[XJ0
-VRk:O:5Q^5?_42Qj7o8XQ71
-w1609323621
+vadder_4_DW01_add_1
+Iz4GiBQ`ieBLHBWc[PL:H]0
+VL;WO2jUGCPLfWRnMiFk`:2
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim
+w1609271882
 8../netlist/RISCV.v
 F../netlist/RISCV.v
-L0 384
+L0 8
+VL;WO2jUGCPLfWRnMiFk`:2
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+nadder_4_@d@w01_add_1
+vaddress_adder
+IDCGhD]<:aVce3E8GkZihz3
+VRk:O:5Q^5?_42Qj7o8XQ71
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim
+w1609271882
+8../netlist/RISCV.v
+F../netlist/RISCV.v
+L0 295
 VRk:O:5Q^5?_42Qj7o8XQ71
 OE;L;6.2g;35
 r1
@@ -58,13 +74,28 @@ r1
 31
 o-work ./work
 naddress_adder_@d@w01_add_0
-vALU
-IE?XB4ZgOdfX^9KgZ:[gL:3
-V5?ZOQT83f;=gT:Hb:3UM40
-w1609323621
+vaddress_adder_DW01_add_1
+Ioha_<8^cRJELM:z>iLgK71
+V0CPZgYC?g9M5P?Dm6iobC0
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim
+w1609271882
 8../netlist/RISCV.v
 F../netlist/RISCV.v
-L0 908
+L0 85
+V0CPZgYC?g9M5P?Dm6iobC0
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+naddress_adder_@d@w01_add_1
+vALU
+Ii?b6ZQlLko8`=S>fDK:]]3
+V5?ZOQT83f;=gT:Hb:3UM40
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim
+w1609271882
+8../netlist/RISCV.v
+F../netlist/RISCV.v
+L0 850
 V5?ZOQT83f;=gT:Hb:3UM40
 OE;L;6.2g;35
 r1
@@ -72,12 +103,13 @@ r1
 o-work ./work
 n@a@l@u
 vALU_DW01_add_1
-Il@lJ]3SI<>V^K]ohkA]`U2
+IjRV:DHk>W9W?::o18k;S;0
 ViJXMSe4Y1VdA;za<KiZET0
-w1609323621
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim
+w1609271882
 8../netlist/RISCV.v
 F../netlist/RISCV.v
-L0 641
+L0 524
 ViJXMSe4Y1VdA;za<KiZET0
 OE;L;6.2g;35
 r1
@@ -85,12 +117,13 @@ r1
 o-work ./work
 n@a@l@u_@d@w01_add_1
 vALU_DW_cmp_0
-I_<HZ;V@2oaOD_g>Z`8=E^1
+ILXj<D6Yfz@M`?l2Z?IJnM3
 V;ReNb315gn>l]]6oMFMzK2
-w1609323621
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim
+w1609271882
 8../netlist/RISCV.v
 F../netlist/RISCV.v
-L0 485
+L0 368
 V;ReNb315gn>l]]6oMFMzK2
 OE;L;6.2g;35
 r1
@@ -98,12 +131,13 @@ r1
 o-work ./work
 n@a@l@u_@d@w_cmp_0
 vbranch_control_unit
-IFTM1fNP>z_1LQA0j_g:^>3
+I0DgL]LJEaV9bFYDBCXo]M3
 VeU?ULdGBK[G19cXDdOg[O3
-w1609323621
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim
+w1609271882
 8../netlist/RISCV.v
 F../netlist/RISCV.v
-L0 1932
+L0 1848
 VeU?ULdGBK[G19cXDdOg[O3
 OE;L;6.2g;35
 r1
@@ -114,8 +148,9 @@ w1609085187
 DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
 DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
-8../RISCV_1st/tb/clk_gen.vhd
-F../RISCV_1st/tb/clk_gen.vhd
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim
+8../RISCV_ABS/tb/clk_gen.vhd
+F../RISCV_ABS/tb/clk_gen.vhd
 l0
 L6
 VmLjQADRN]aU`l]n0Zijde1
@@ -139,12 +174,13 @@ M1 ieee std_logic_unsigned
 o-93 -work ./work
 tExplicit 1
 vcontrol
-I076Nf3CA=9S5RcUMo0znB1
+ING>:Z]B:QSYKnNfF?8OI<2
 Vkm8[5AbPK0`ebN1;jd;dC2
-w1609323621
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim
+w1609271882
 8../netlist/RISCV.v
 F../netlist/RISCV.v
-L0 4216
+L0 4172
 Vkm8[5AbPK0`ebN1;jd;dC2
 OE;L;6.2g;35
 r1
@@ -154,8 +190,9 @@ Edata_memory
 w1609094493
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
-8../RISCV_1st/tb/data_memory.vhd
-F../RISCV_1st/tb/data_memory.vhd
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim
+8../RISCV_ABS/tb/data_memory.vhd
+F../RISCV_ABS/tb/data_memory.vhd
 l0
 L5
 V3QGH]i0=mV;G:X7bE>5hh2
@@ -177,12 +214,13 @@ M1 ieee numeric_std
 o-93 -work ./work
 tExplicit 1
 vEX_MEM_reg
-IeKlfNKk8=KaSG`lKIA@ej2
+I35^2^[7e3iK6A]_UZ;HPZ0
 VYC6CZAXInZeF9;z9`iFVj3
-w1609323621
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim
+w1609271882
 8../netlist/RISCV.v
 F../netlist/RISCV.v
-L0 1960
+L0 1876
 VYC6CZAXInZeF9;z9`iFVj3
 OE;L;6.2g;35
 r1
@@ -190,36 +228,39 @@ r1
 o-work ./work
 n@e@x_@m@e@m_reg
 vforwarding_unit
-IMk@MUdAGh5=KQ<l:7oFeG0
+I3hPD=ZeFcS271iCcYCT_;0
 Vn3OASR6B8kmHDcOnO;alA0
-w1609323621
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim
+w1609271882
 8../netlist/RISCV.v
 F../netlist/RISCV.v
-L0 2525
+L0 2445
 Vn3OASR6B8kmHDcOnO;alA0
 OE;L;6.2g;35
 r1
 31
 o-work ./work
 vhazard_detection_unit
-I56TchJh=UA4A=_F72Y7UV1
+IV>6lTPMCCEnTl[TSQShh32
 VAfFN;f5B1a[XfAjg[89z12
-w1609323621
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim
+w1609271882
 8../netlist/RISCV.v
 F../netlist/RISCV.v
-L0 2591
+L0 2515
 VAfFN;f5B1a[XfAjg[89z12
 OE;L;6.2g;35
 r1
 31
 o-work ./work
 vID_EX_reg
-I>DE2kj4F9NCKidXjhXdH73
+IjlD8gAYa^N>8ENUR`90f`2
 V7cR8aL_WG;c?6NV08]SdF3
-w1609323621
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim
+w1609271882
 8../netlist/RISCV.v
 F../netlist/RISCV.v
-L0 2628
+L0 2552
 V7cR8aL_WG;c?6NV08]SdF3
 OE;L;6.2g;35
 r1
@@ -227,12 +268,13 @@ r1
 o-work ./work
 n@i@d_@e@x_reg
 vIF_ID_reg
-IOT8GbX]j3LThEFog]PFVh3
+I=7_0_J^mgP;Od74Wa`Gg73
 V:OP`:8A9UUoAN10JSaGa12
-w1609323621
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim
+w1609271882
 8../netlist/RISCV.v
 F../netlist/RISCV.v
-L0 3570
+L0 3524
 V:OP`:8A9UUoAN10JSaGa12
 OE;L;6.2g;35
 r1
@@ -240,23 +282,25 @@ r1
 o-work ./work
 n@i@f_@i@d_reg
 vimm_gen
-IKj2ck[2hb`?gon1T;;J_a2
+INC@gH6BH`cf;1bVQz<_j<3
 V]M3HzXfd3OzdHgN[@PbNY0
-w1609323621
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim
+w1609271882
 8../netlist/RISCV.v
 F../netlist/RISCV.v
-L0 4106
+L0 4062
 V]M3HzXfd3OzdHgN[@PbNY0
 OE;L;6.2g;35
 r1
 31
 o-work ./work
 Einstruction_memory
-w1609069394
+w1609263040
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
-8../RISCV_1st/tb/instruction_memory.vhd
-F../RISCV_1st/tb/instruction_memory.vhd
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim
+8../RISCV_ABS/tb/instruction_memory.vhd
+F../RISCV_ABS/tb/instruction_memory.vhd
 l0
 L5
 VKnBP=Phe3foiib?Rl5OG43
@@ -268,9 +312,9 @@ Artl
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work instruction_memory KnBP=Phe3foiib?Rl5OG43
-l21
+l26
 L15
-V9OBbF`PLPUPNzaT2m4<jR0
+V1Un@0V^mP3Y:3biA0JY2A1
 OE;C;6.2g;35
 31
 M2 ieee std_logic_1164
@@ -278,12 +322,13 @@ M1 ieee numeric_std
 o-93 -work ./work
 tExplicit 1
 vMEM_WB_reg
-IF`02TAiO7VEA9oJn3MR5F1
+IO0N]SD`_<1hEIW@Lm^<RX2
 VomJTG9C5U3NaHB@SFdQd^2
-w1609323621
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim
+w1609271882
 8../netlist/RISCV.v
 F../netlist/RISCV.v
-L0 4284
+L0 4240
 VomJTG9C5U3NaHB@SFdQd^2
 OE;L;6.2g;35
 r1
@@ -291,108 +336,117 @@ r1
 o-work ./work
 n@m@e@m_@w@b_reg
 vmy_mux32_0
-In<V_W7<:;d[SdB2iKA]ID2
+I43jG6RmS72b5:M@U9@ab>1
 Vh56XneShHEI?oWQ3W00WN1
-w1609323621
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim
+w1609271882
 8../netlist/RISCV.v
 F../netlist/RISCV.v
-L0 1494
+L0 1481
 Vh56XneShHEI?oWQ3W00WN1
 OE;L;6.2g;35
 r1
 31
 o-work ./work
 vmy_mux32_1
-I5I7C@InAdRjg6DmJl^I:a3
+I<`n;dNZ4JFc@>6>mMKB[21
 V8AQgke@jadO>^NCSo[QKf1
-w1609323621
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim
+w1609271882
 8../netlist/RISCV.v
 F../netlist/RISCV.v
-L0 1713
+L0 1653
 V8AQgke@jadO>^NCSo[QKf1
 OE;L;6.2g;35
 r1
 31
 o-work ./work
 vmy_mux_0
-IR^8bMBb[ZZ1b4>]<`LVOH3
+I>OmAPz^oc1PcdM4AAI?Hf3
 VNnIj3hWBPU;_FgdW43bLf0
-w1609323621
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim
+w1609271882
 8../netlist/RISCV.v
 F../netlist/RISCV.v
-L0 395
+L0 306
 VNnIj3hWBPU;_FgdW43bLf0
 OE;L;6.2g;35
 r1
 31
 o-work ./work
 vmy_mux_1
-Ic6;nS0EEnhCQ[1eoNc<3=0
+IA4QClZT;Fl@9aIFLeFZZ<3
 V:6gklhDAY]CBAi:Nf36da3
-w1609323621
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim
+w1609271882
 8../netlist/RISCV.v
 F../netlist/RISCV.v
-L0 4888
+L0 4801
 V:6gklhDAY]CBAi:Nf36da3
 OE;L;6.2g;35
 r1
 31
 o-work ./work
 vmy_mux_2
-IodH[iCP3Xe=Z=dN@QWfA_2
+I99_;Nki@O[i5W6TH8Uo^Y0
 VbdFYTgDXT^hcO4@VOC[RM2
-w1609323621
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim
+w1609271882
 8../netlist/RISCV.v
 F../netlist/RISCV.v
-L0 4650
+L0 4609
 VbdFYTgDXT^hcO4@VOC[RM2
 OE;L;6.2g;35
 r1
 31
 o-work ./work
 vmy_mux_3
-IRdf81[boTRFIfon]1nhN_0
+ITGMMhZ58DPO3QEJ>:M1DU0
 V0oRD48LD;KPB>?J_CfHDd2
-w1609323621
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim
+w1609271882
 8../netlist/RISCV.v
 F../netlist/RISCV.v
-L0 1841
+L0 1803
 V0oRD48LD;KPB>?J_CfHDd2
 OE;L;6.2g;35
 r1
 31
 o-work ./work
 vmy_mux_4
-INcNaoBJgV2YI]NWRmzY9C3
+IKEJde_I?J6@9[RmcTFIJ30
 VgdM[C]aeoAK7?_;F@gMRZ3
-w1609323621
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim
+w1609271882
 8../netlist/RISCV.v
 F../netlist/RISCV.v
-L0 1622
+L0 1608
 VgdM[C]aeoAK7?_;F@gMRZ3
 OE;L;6.2g;35
 r1
 31
 o-work ./work
 vmy_mux_5
-IfM5D`:NH9kQeCbz]R^Fog1
+IQaTLo;]AkR5f`YBTOizK]2
 VaJ:j75_mKa]fN3<6AVKaJ1
-w1609323621
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim
+w1609271882
 8../netlist/RISCV.v
 F../netlist/RISCV.v
-L0 1406
+L0 1418
 VaJ:j75_mKa]fN3<6AVKaJ1
 OE;L;6.2g;35
 r1
 31
 o-work ./work
 vPC
-IEG;8]WQd?nYD6RkSU>^^l1
+IJ[V^dzTb7YNgRI51>]cCJ1
 V;H@]NdNc982YXgEe8nXbE2
-w1609323621
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim
+w1609271882
 8../netlist/RISCV.v
 F../netlist/RISCV.v
-L0 4741
+L0 4654
 V;H@]NdNc982YXgEe8nXbE2
 OE;L;6.2g;35
 r1
@@ -400,24 +454,26 @@ r1
 o-work ./work
 n@p@c
 vregisters
-IY<;2JY@ZWa[l:z>Ok8F@41
+I_7nC=h@hL0N>gC`L?cAG53
 VYO:jEbBQ:[J>INj=e1cRg3
-w1609323621
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim
+w1609271882
 8../netlist/RISCV.v
 F../netlist/RISCV.v
-L0 4979
+L0 4875
 VYO:jEbBQ:[J>INj=e1cRg3
 OE;L;6.2g;35
 r1
 31
 o-work ./work
 vRISCV
-I3U>boMR?W=<5P8:g;FaQk1
+I6eB2?DaaNWd=EFcPD?6EP2
 VcLl89Y2adn;2G8F?H@>Wm3
-w1609323621
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim
+w1609271882
 8../netlist/RISCV.v
 F../netlist/RISCV.v
-L0 13249
+L0 13244
 VcLl89Y2adn;2G8F?H@>Wm3
 OE;L;6.2g;35
 r1
@@ -427,9 +483,10 @@ n@r@i@s@c@v
 vRISCV_tb
 IH[b`beS9_on=BU`IRBahJ3
 VhE4N`ZBkaoD9VRh]jmSMY1
+d/home/isa04/Desktop/lab3/RISCV_ABS/sim
 w1608632759
-8../RISCV_1st/tb/RISCV_tb.v
-F../RISCV_1st/tb/RISCV_tb.v
+8../RISCV_ABS/tb/RISCV_tb.v
+F../RISCV_ABS/tb/RISCV_tb.v
 L0 3
 VhE4N`ZBkaoD9VRh]jmSMY1
 OE;L;6.2g;35

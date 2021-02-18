@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version O-2018.06-SP4 for linux64 -- Nov 27, 2018
-#@ # Date:   Wed Dec 30 11:39:04 2020
+#@ # Date:   Thu Feb 18 14:54:02 2021
 #@ # Run by: isa04@localhost.localdomain
 #@ 
 
@@ -42999,47 +42999,8 @@ gui_start
 #@ 
 #@ # -- End source /software/synopsys/syn_current_64.18/auxx/tcllib/lib/iwidgets4.1/watch.itk
 
-source script_RISCV_bonus.txt
-#@ # -- Starting source script_RISCV_bonus.txt
-
-#@ analyze -f vhdl -lib WORK ../RISCV_ABS/src/my_mux32.vhd
-#@ analyze -f vhdl -lib WORK ../RISCV_ABS/src/IF_ID_reg.vhd
-#@ analyze -f vhdl -lib WORK ../RISCV_ABS/src/MEM_WB_reg.vhd
-#@ analyze -f vhdl -lib WORK ../RISCV_ABS/src/EX_MEM_reg.vhd
-#@ analyze -f vhdl -lib WORK ../RISCV_ABS/src/ID_EX_reg.vhd
-#@ analyze -f vhdl -lib WORK ../RISCV_ABS/src/stage1/PC.vhd
-#@ analyze -f vhdl -lib WORK ../RISCV_ABS/src/stage1/my_mux.vhd
-#@ analyze -f vhdl -lib WORK ../RISCV_ABS/src/stage1/adder_4.vhd
-#@ analyze -f vhdl -lib WORK ../RISCV_ABS/src/stage2/ABS_unit.vhd
-#@ analyze -f vhdl -lib WORK ../RISCV_ABS/src/stage2/imm_gen.vhd
-#@ analyze -f vhdl -lib WORK ../RISCV_ABS/src/stage2/registers.vhd
-#@ analyze -f vhdl -lib WORK ../RISCV_ABS/src/stage2/control.vhd
-#@ analyze -f vhdl -lib WORK ../RISCV_ABS/src/stage2/forwarding_unit.vhd
-#@ analyze -f vhdl -lib WORK ../RISCV_ABS/src/stage2/hazard_detection_unit.vhd
-#@ analyze -f vhdl -lib WORK ../RISCV_ABS/src/stage2/branch_control_unit.vhd
-#@ analyze -f vhdl -lib WORK ../RISCV_ABS/src/stage3/address_adder.vhd
-#@ analyze -f vhdl -lib WORK ../RISCV_ABS/src/stage3/ALU.vhd
-#@ analyze -f vhdl -lib WORK ../RISCV_ABS/src/RISCV.vhd
-#@ 
-#@ set power_preserve_rtl_hier_names true
-#@ ungroup -all -flatten
-#@ elaborate RISCV -architecture bdf_type -library work > elaborate.txt
-#@ link
-#@ create_clock -name MY_CLK -period 2.60 clk
-#@ set_dont_touch_network MY_CLK
-#@ set_clock_uncertainty 0.07 [get_clocks MY_CLK]
-#@ set_input_delay 0.5 -max -clock MY_CLK [remove_from_collection [all_inputs] clk]
-#@ set_output_delay 0.5 -max -clock MY_CLK [all_outputs]
-#@ set OLOAD [load_of NangateOpenCellLibrary/BUF_X4/A]
-#@ set_load $OLOAD [all_outputs]
-#@ compile
-#@ report_timing > RISCV_report_timing_2_60ns.txt
-#@ report_area > RISCV_report_area_2_60ns.txt
-#@ report_resources > RISCV_report_resources_2_60ns.txt
-#@ 
-#@ change_names -hierarchy -rules verilog
-#@ write_sdf ../netlist/RISCV.sdf
-#@ write -f verilog -hierarchy -output --/netlist/RISCV.v
-#@ write_sdc ../netlist/RISCV.sdc
-#@ # -- End source script_RISCV_bonus.txt
-
+read_verilog -netlist ../netlist/RISCV.v
+current_design RISCV
+read_saif -input ../saif/RISCV_syn.saif -instance RISCV_tb/UUT -unit ns -scale 1
+create_clock -name MY_CLK clk
+report_power > report_power.txt

@@ -3,7 +3,7 @@
 Report : area
 Design : RISCV
 Version: O-2018.06-SP4
-Date   : Wed Dec 30 12:05:38 2020
+Date   : Wed Feb 17 18:08:19 2021
 ****************************************
 
 Library(s) Used:

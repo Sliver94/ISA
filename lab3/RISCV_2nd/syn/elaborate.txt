@@ -1,9 +1,6 @@
-Loading db file '/software/synopsys/syn_current_64.18/libraries/syn/gtech.db'
-Loading db file '/software/synopsys/syn_current_64.18/libraries/syn/standard.sldb'
-  Loading link library 'NangateOpenCellLibrary'
-  Loading link library 'gtech'
 Running PRESTO HDLC
 Presto compilation completed successfully.
+Warning: Overwriting design file '/home/isa04/Desktop/lab3/RISCV_ABS/syn/RISCV.db'. (DDB-24)
 Elaborated 1 design.
 Current design is now 'RISCV'.
 Information: Building the design 'my_mux'. (HDL-193)

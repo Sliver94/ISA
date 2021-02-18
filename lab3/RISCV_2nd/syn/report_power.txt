@@ -1,0 +1,58 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'RISCV' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : RISCV
+Version: O-2018.06-SP4
+Date   : Thu Feb 18 14:57:39 2021
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+RISCV                  5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =   5.2839 mW   (92%)
+  Net Switching Power  = 454.4431 uW    (8%)
+                         ---------
+Total Dynamic Power    =   5.7383 mW  (100%)
+
+Cell Leakage Power     = 323.7562 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.7892          228.2094           43.0596          229.0417  (   3.78%)
+register       5.1626e+03           21.5172        1.2623e+05        5.3103e+03  (  87.60%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational    120.5043          204.7168        1.9748e+05          522.7029  (   8.62%)
+--------------------------------------------------------------------------------------------------
+Total          5.2839e+03 uW       454.4434 uW     3.2376e+05 nW     6.0621e+03 uW
+1

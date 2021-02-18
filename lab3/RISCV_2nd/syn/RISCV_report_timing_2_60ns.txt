@@ -8,7 +8,7 @@ Report : timing
         -max_paths 1
 Design : RISCV
 Version: O-2018.06-SP4
-Date   : Wed Dec 30 12:05:37 2020
+Date   : Wed Feb 17 18:08:19 2021
 ****************************************
 
  # A fanout number of 1000 was used for high fanout net computations.
