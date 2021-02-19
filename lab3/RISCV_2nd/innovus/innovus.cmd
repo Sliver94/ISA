@@ -1,7 +1,7 @@
 #######################################################
 #                                                     
 #  Innovus Command Logging File                     
-#  Created on Sun Jan  3 16:11:29 2021                
+#  Created on Fri Feb 19 20:43:29 2021                
 #                                                     
 #######################################################
 
@@ -21,7 +21,7 @@ win
 set init_design_netlisttype verilog
 set init_design_settop 1
 set init_top_cell RISCV
-set init_verilog ../netlist/RISCV.v
+set init_verilog ../netlist_syn/RISCV.v
 set init_lef_file /software/dk/nangate45/lef/NangateOpenCellLibrary.lef
 set init_gnd_net VSS
 set init_pwr_net VDD
@@ -29,7 +29,7 @@ set init_mmmc_file mmm_design.tcl
 init_design
 getIoFlowFlag
 setIoFlowFlag 0
-floorPlan -coreMarginsBy die -site FreePDK45_38x28_10R_NP_162NW_34O -r 1.0 0.6 5.0 5.0 5.0 5.0
+floorPlan -coreMarginsBy die -site FreePDK45_38x28_10R_NP_162NW_34O -r 1 0.6 5 5 5 5
 uiSetTool select
 getIoFlowFlag
 fit
@@ -52,73 +52,17 @@ set sprCreateIeRingLayers {}
 set sprCreateIeStripeWidth 10.0
 set sprCreateIeStripeThreshold 1.0
 setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal10 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {VDD VSS} -type core_rings -follow core -layer {top metal1 bottom metal1 left metal2 right metal2} -width {top 1.8 bottom 1.8 left 1.8 right 1.8} -spacing {top 1.8 bottom 1.8 left 1.8 right 1.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 0 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal10 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
 addRing -nets {VDD VSS} -type core_rings -follow core -layer {top metal1 bottom metal1 left metal2 right metal2} -width {top 0.8 bottom 0.8 left 0.8 right 0.8} -spacing {top 0.8 bottom 0.8 left 0.8 right 0.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
-clearGlobalNets
-globalNetConnect VDD -type pgpin -pin VDD -inst * -module {}
-globalNetConnect VSS -type pgpin -pin VSS -inst * -module {}
-clearGlobalNets
-globalNetConnect VDD -type pgpin -pin VDD -inst * -module {}
-globalNetConnect VSS -type pgpin -pin VSS -inst * -module {}
-clearGlobalNets
-globalNetConnect VDD -type pgpin -pin VDD -inst * -module {}
-globalNetConnect VSS -type pgpin -pin VSS -inst * -module {}
-clearGlobalNets
-globalNetConnect VDD -type pgpin -pin VDD -inst * -module {}
-globalNetConnect VSS -type pgpin -pin VSS -inst * -module {}
 setSrouteMode -viaConnectToShape { noshape }
 sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { metal1(1) metal10(10) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { metal1(1) metal10(10) } -nets { VDD VSS } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { metal1(1) metal10(10) }
-setPlaceMode -prerouteAsObs {1 2 3 4 5 6 7 8 9 10}
+setPlaceMode -prerouteAsObs {1 2 3 4 5 6 7 8}
 setPlaceMode -fp false
 placeDesign
-setLayerPreference allM9 -isVisible 0
-setLayerPreference allM9Cont -isVisible 0
-setLayerPreference allM8 -isVisible 0
-setLayerPreference allM3 -isVisible 0
-setLayerPreference allM8Cont -isVisible 0
-setLayerPreference allM8 -isVisible 1
-setLayerPreference allM8 -isVisible 0
-setLayerPreference allM9 -isVisible 1
-setLayerPreference allM7 -isVisible 0
-setLayerPreference allM7Cont -isVisible 0
-setLayerPreference allM6 -isVisible 0
-setLayerPreference allM6Cont -isVisible 0
-setLayerPreference allM5 -isVisible 0
-setLayerPreference allM5Cont -isVisible 0
-setLayerPreference allM4 -isVisible 0
-setLayerPreference allM4Cont -isVisible 0
-setLayerPreference allM1 -isVisible 0
-setLayerPreference allM2Cont -isVisible 0
-setLayerPreference allM2 -isVisible 0
-setLayerPreference allM1 -isVisible 1
-setLayerPreference allM2Cont -isVisible 1
-setLayerPreference allM2 -isVisible 1
-setLayerPreference allM3 -isVisible 1
-setLayerPreference allM4Cont -isVisible 1
-setLayerPreference allM4 -isVisible 1
-setLayerPreference allM5Cont -isVisible 1
-setLayerPreference allM5 -isVisible 1
-setLayerPreference allM6Cont -isVisible 1
-setLayerPreference allM6 -isVisible 1
-setLayerPreference allM7Cont -isVisible 1
-setLayerPreference allM7 -isVisible 1
-setLayerPreference allM8Cont -isVisible 1
-setLayerPreference allM8 -isVisible 1
-setLayerPreference allM9Cont -isVisible 1
 setOptMode -fixCap true -fixTran true -fixFanoutLoad false
 optDesign -postCTS
 optDesign -postCTS -hold
-gui_select -rect {90.900 117.487 89.539 122.591}
-gui_select -rect {117.101 100.814 99.067 100.133}
-gui_select -rect {102.129 100.473 63.678 100.814}
-gui_select -rect {128.671 100.814 67.761 102.514}
-gui_select -rect {132.413 100.814 60.616 96.050}
-gui_select -rect {138.198 101.154 89.539 100.133}
-gui_select -rect {122.205 101.494 66.741 96.050}
-gui_select -rect {125.948 103.535 103.490 104.216}
-gui_select -rect {141.261 100.814 96.004 100.473}
-gui_select -rect {115.740 102.514 122.546 121.230}
-deselectAll
-selectWire 136.7550 81.4800 136.8950 99.5400 6 b2v_registers_inst/FE_OFN62_n2946
 getFillerMode -quiet
 addFiller -cell FILLCELL_X8 FILLCELL_X4 FILLCELL_X32 FILLCELL_X2 FILLCELL_X16 FILLCELL_X1 -prefix FILLER
 setNanoRouteMode -quiet -timingEngine {}
@@ -130,23 +74,23 @@ setNanoRouteMode -quiet -drouteEndIteration default
 setNanoRouteMode -quiet -routeWithTimingDriven false
 setNanoRouteMode -quiet -routeWithSiDriven false
 routeDesign -globalDetail
+setAnalysisMode -analysisType onChipVariation
 setOptMode -fixCap true -fixTran true -fixFanoutLoad false
 optDesign -postRoute
-setOptMode -fixCap true -fixTran true -fixFanoutLoad false
-optDesign -postRoute
+optDesign -postRoute -hold
 saveDesign RISCV.enc
 getDrawView
 setDrawView fplan
 win
-dumpToGIF snapshot/ss_snapshot.fplan.gif
+dumpToGIF snapshot/ss_.fplan.gif
 getDrawView
 setDrawView amoeba
 win
-dumpToGIF snapshot/ss_snapshot.amoeba.gif
+dumpToGIF snapshot/ss_.amoeba.gif
 getDrawView
 setDrawView place
 win
-dumpToGIF snapshot/ss_snapshot.place.gif
+dumpToGIF snapshot/ss_.place.gif
 checkPlace checkplace.ss.rpt
 reset_parasitics
 extractRC
@@ -167,5 +111,28 @@ saveNetlist RISCV.v
 all_hold_analysis_views 
 all_setup_analysis_views 
 write_sdf  -ideal_clock_network RISCV.sdf
-panPage -1 0
-panPage 1 0
+set_power_analysis_mode -reset
+set_power_analysis_mode -method static -corner max -create_binary_db true -write_static_currents true -honor_negative_energy true -ignore_control_signals true
+set_power_output_dir -reset
+set_power_output_dir ./
+set_default_switching_activity -reset
+set_default_switching_activity -input_activity 0.2 -period 10.0
+read_activity_file -reset
+set_power -reset
+set_powerup_analysis -reset
+set_dynamic_power_simulation -reset
+report_power -rail_analysis_format VS -outfile .//RISCV.rpt
+set_power_analysis_mode -reset
+set_power_analysis_mode -method static -corner max -create_binary_db true -write_static_currents true -honor_negative_energy true -ignore_control_signals true
+set_power_output_dir -reset
+set_power_output_dir ./
+set_default_switching_activity -reset
+set_default_switching_activity -input_activity 0.2 -period 10.0
+read_activity_file -reset
+read_activity_file -format VCD -scope /RISCV_tb/UUT -start {} -end {} -block {} ../vcd/RISCV_syn.vcd
+set_power -reset
+set_powerup_analysis -reset
+set_dynamic_power_simulation -reset
+report_power -rail_analysis_format VS -outfile .//RISCV.rpt
+report_power -sort { total }
+report_power -outfile power_report.txt -sort { total }

@@ -12,6 +12,7 @@ entity control is
         ALUSrcA         : out    vl_logic;
         ALUSrcB         : out    vl_logic;
         jal_control     : out    vl_logic;
-        branch_instruction: out    vl_logic
+        branch_instruction: out    vl_logic;
+        absolute_value  : out    vl_logic
     );
 end control;

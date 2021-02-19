@@ -29,7 +29,7 @@ D 23 ./work.data_memory(rtl) 7P:I40KMNdDiFmNJzVLd91 2 1
 D 22 ./work.forwarding_unit UT]eA01ffi`OY190kf6D?1 55 0
 D 28 ./work.hazard_detection_unit 78BK1D4JD7i;MjR]gPz>Z2 57 0
 D 14 ./work.imm_gen 66ihd=PC5B9IVI@RJlhK`0 60 0
-D 30 ./work.instruction_memory(rtl) 1Un@0V^mP3Y:3biA0JY2A1 1 1
+D 30 ./work.instruction_memory(rtl) Jg4=mQ@7dcMDFXHk6FT=?1 1 1
 D 17 ./work.my_mux32_0 Fd3nj?<C1Dl=z4aAAdajh0 42 0
 D 17 ./work.my_mux32_1 lFJ;151Li8R<^C8YD<>lJ1 45 0
 D 15 ./work.my_mux_0 655Ke9B1oOm^]e^g23GNm3 9 0
@@ -76,24 +76,18 @@ D 50 /software/dk/nangate45/verilog/msim6.2g.seq_DFF_X1 o<>Z>fHnW^I3PCbc`ohM52 4
 D 50 /software/dk/nangate45/verilog/msim6.2g.seq_DFF_X2 8o@Nn]0zIP6Z<GgmKkFgW0 52 0
 2 4 fast 0 QUj>9RINQ14Of2oY4bG>K2 0 3 1
 2 4 fast 0 =LhJ[kS8>T_BZnSg1eHZM3 16 19 0
-2 4 fast 0 00Ie]YPMVIMLgSRA9P0VQ2 9 12 0
-2 4 fast 0 `4DNFj56^M=a:Lc4KNIVX0 43 46 0
-2 4 fast 0 VBYl<Z`M<j__O7VAF;JGU2 40 43 0
-2 4 fast 0 M<DAck71LiBKO`UaPZCl_1 41 44 1
-2 4 fast 0 aUC@<24;?az;CS[C_OP_k0 48 51 0
-2 4 fast 0 ?UdJBTSUz9[8U^1b]oc]E2 46 49 0
-2 4 fast 0 f0f@jYX<8;Z24]BI@gizU2 47 50 1
-2 4 fast 0 aCQkf3Gkl<VzN>^]k6?W;0 50 53 1
-2 4 fast 0 RLgQY>k>?d4Fjb7^b0lK]2 51 54 0
 2 4 fast 0 =z[4kS1WTM]hE^7GHhMMC0 1 4 1
 2 4 fast 0 d3XSW``[U:1mUhjAQe61E2 2 5 1
 2 4 fast 0 _@z71>hnGzi[BQ9A`2TXa1 4 7 1
 2 4 fast 0 V3`2[0j_FO3mQE?TGSMkS1 3 6 1
 2 4 fast 0 >]gi;?2FzLGXRXJU4a1]h0 5 8 1
-2 4 fast 0 [VioZ@<=OQZDeP3B9zW6W0 42 45 0
 2 4 fast 0 nGb9<YE;`S9B4Yl73R@ST2 6 9 0
 2 4 fast 0 DX@Ch1IEz;7JXU0<6?[ZJ0 8 11 1
+2 4 fast 0 M<DAck71LiBKO`UaPZCl_1 41 44 1
+2 4 fast 0 aUC@<24;?az;CS[C_OP_k0 48 51 0
+2 4 fast 0 ?UdJBTSUz9[8U^1b]oc]E2 46 49 0
 2 4 fast 0 1H;Gi]F1Z0CiJ0ImU6k9U3 7 10 1
+2 4 fast 0 00Ie]YPMVIMLgSRA9P0VQ2 9 12 0
 2 4 fast 0 TVMJRg9GCgb5Sm[z]z1kz2 10 13 1
 2 4 fast 0 Z2P<Nd6BKiR@WE:>hMUeS2 11 14 0
 2 4 fast 0 >cQ4Q4X<Nhc_42U>3@HlQ1 12 15 1
@@ -105,15 +99,22 @@ D 50 /software/dk/nangate45/verilog/msim6.2g.seq_DFF_X2 8o@Nn]0zIP6Z<GgmKkFgW0 5
 2 4 fast 0 fUEVmJGMdL2hzG=hKG1?J2 25 28 1
 2 4 fast 0 5gQJ1[aM<4SH3D5B_PoJc1 24 27 1
 2 4 fast 0 cba2Uec<FN]cM79N>B1XC2 64 67 1
+2 4 fast 0 [VioZ@<=OQZDeP3B9zW6W0 42 45 0
 2 4 fast 0 S5knaXU5Y[2VkIQK_^?oi0 13 16 0
 2 4 fast 0 AWRlB4JR4YX;9icUPTmWi2 14 17 0
 2 4 fast 0 Kgzajc;i[;MU;?]^E;Z9N1 15 18 1
 2 4 fast 0 CPg;OD>:o`iAnJ30ThljT3 17 20 0
 2 4 fast 0 Y=R@TTcMIOUSlcGAaFn9Q1 23 26 1
-2 4 fast 0 1dbZz=OTQ5LEWgYMz2;D^0 28 31 1
 2 4 fast 0 c:[hneNnF:VK8`eMmRmlD3 26 29 0
-2 4 fast 0 [_ahfg^N;hkA:MIE5ZaJ71 27 30 1
+2 4 fast 0 1dbZz=OTQ5LEWgYMz2;D^0 28 31 1
 2 4 fast 0 _FP8PX]VjZBEH2AH9=IJR0 29 32 1
+2 4 fast 0 [_ahfg^N;hkA:MIE5ZaJ71 27 30 1
+2 4 fast 0 VBYl<Z`M<j__O7VAF;JGU2 40 43 0
+2 4 fast 0 f0f@jYX<8;Z24]BI@gizU2 47 50 1
+2 7 verilog 0 8o@Nn]0zIP6Z<GgmKkFgW0 49 52 0
+2 4 fast 0 aCQkf3Gkl<VzN>^]k6?W;0 50 53 1
+2 4 fast 0 RLgQY>k>?d4Fjb7^b0lK]2 51 54 0
+2 4 fast 0 V[I3Yz;=L^0SeG:`0^TkX3 52 55 0
 2 4 fast 0 zI;oBfL6_HR<mDeA@XNek3 30 33 0
 2 4 fast 0 mnz=P5gMD^DXF>o8;c]ij0 31 34 1
 2 4 fast 0 1ZTdcC]YXHzKKU90bjNYV2 32 35 1
@@ -124,13 +125,12 @@ D 50 /software/dk/nangate45/verilog/msim6.2g.seq_DFF_X2 8o@Nn]0zIP6Z<GgmKkFgW0 5
 2 4 fast 0 4ld;MO8C9XI8z;3K6zPK80 39 42 0
 2 4 fast 0 S7n5D=@eGPP<@]I=Rz?T@0 37 40 0
 2 4 fast 0 0MZdd^=MP4Al1d=T;FcLM3 36 39 1
-2 4 fast 0 db3hY4^QCb]I^MaGaK>kV3 45 48 1
-2 7 verilog 0 8o@Nn]0zIP6Z<GgmKkFgW0 49 52 0
 2 7 verilog 0 o<>Z>fHnW^I3PCbc`ohM52 44 47 0
-2 4 fast 0 V[I3Yz;=L^0SeG:`0^TkX3 52 55 0
+2 4 fast 0 db3hY4^QCb]I^MaGaK>kV3 45 48 1
+2 4 fast 0 `4DNFj56^M=a:Lc4KNIVX0 43 46 0
 2 4 fast 0 LIS>h7oUY83f9dMP=1o=S1 55 58 0
-2 4 fast 0 WHG2UH4zV7@gnZ]mOge]11 54 57 0
 2 4 fast 0 E_]V;SBK>adclzR8I3<2Z1 53 56 1
+2 4 fast 0 WHG2UH4zV7@gnZ]mOge]11 54 57 0
 2 4 fast 0 6J]i7i_Qch8jQVFi284A91 56 59 0
 2 4 fast 0 hRF5m^Mb`V[9Bj0PQ]84K3 57 60 0
 2 4 fast 0 9olKc;54CdAT4[BG;cE]Z0 58 61 0

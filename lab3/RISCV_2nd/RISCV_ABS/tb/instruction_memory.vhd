@@ -13,7 +13,7 @@ ENTITY instruction_memory IS
 END instruction_memory;
 
 ARCHITECTURE rtl OF instruction_memory IS
-   TYPE mem IS ARRAY(0 TO 23) OF std_logic_vector(31 DOWNTO 0);
+   TYPE mem IS ARRAY(0 TO 27) OF std_logic_vector(31 DOWNTO 0);
    SIGNAL memory_array: mem;
 
 	SIGNAL instruction_address_tmp : std_logic_vector(31 DOWNTO 0);
@@ -52,8 +52,12 @@ BEGIN
 				memory_array(19) <= x"00d2a023";
 				memory_array(20) <= "000000000000" & x8 & "001" & x14 & "0010011";
 				memory_array(21) <= "000000000000" & x9 & "001" & x15 & "0010011";
-				memory_array(22) <= x"000000ef";
-				memory_array(23) <= x"00000013";
+				memory_array(22) <= x"00428293";
+				memory_array(23) <= x"00e2a023";
+				memory_array(24) <= x"00428293";
+				memory_array(25) <= x"00f2a023";
+				memory_array(26) <= x"000000ef";
+				memory_array(27) <= x"00000013";
 			
 			END IF;
          

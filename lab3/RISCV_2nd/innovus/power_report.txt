@@ -1,0 +1,95 @@
+*----------------------------------------------------------------------------------------
+*	Innovus 17.11-s080_1 (64bit) 08/04/2017 11:13 (Linux 2.6.18-194.el5)
+*	
+*
+* 	Date & Time:	2021-Feb-19 21:16:17 (2021-Feb-19 20:16:17 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: RISCV
+*
+*	Liberty Libraries used: 
+*	        MyAnView: /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib
+*
+*	Power Domain used: 
+*
+*       Power View : MyAnView
+*
+*       User-Defined Activity : N.A.
+*
+*	Switching Activity File used: 
+*	        ../vcd/RISCV_syn.vcd
+*			Vcd Window used(Start Time, Stop Time):(-1.3229e-15, -1.32291e-15) 
+*                     Vcd Scale Factor: 1 
+**                    Design annotation coverage: 0/8600 = 0% 
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: N.A.
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs 
+*
+*       report_power -outfile power_report.txt -sort total
+*
+-----------------------------------------------------------------------------------------
+
+
+Total Power 
+-----------------------------------------------------------------------------------------
+Total Internal Power:        6.21169253 	   65.3655%
+Total Switching Power:       2.99886052 	   31.5570%
+Total Leakage Power:         0.29245646 	    3.0775%
+Total Power:                 9.50300949 
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                         4.772       0.583      0.1239       5.479       57.66 
+Macro                                  0           0           0           0           0 
+IO                                     0           0           0           0           0 
+Combinational                       1.43       1.773      0.1685       3.371       35.48 
+Clock (Combinational)           0.009788      0.6424   4.306e-05      0.6523       6.864 
+Clock (Sequential)                     0           0           0           0           0 
+-----------------------------------------------------------------------------------------
+Total                              6.212       2.999      0.2925       9.503         100 
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Default                   1.1      6.212       2.999      0.2925       9.503         100 
+
+
+Clock                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+MY_CLK                          0.009788      0.6424   4.306e-05      0.6523       6.864 
+-----------------------------------------------------------------------------------------
+Total (excluding duplicates)    0.009788      0.6424   4.306e-05      0.6523       6.864 
+-----------------------------------------------------------------------------------------
+
+
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+* 		Highest Average Power:  b2v_registers_inst/U2262 (INV_X2): 	    0.6408 
+* 		Highest Leakage Power: b2v_EX_MEM_inst/branch_address_out_reg_31_ (DFF_X2): 	  0.000113 
+* 		Total Cap: 	4.32041e-11 F
+* 		Total instances in design:  8518
+* 		Total instances in design with no power:     0
+*          Total instances in design with no activity:     0
+* 		Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
+

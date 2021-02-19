@@ -5,8 +5,6 @@ entity my_mux_0 is
         a               : in     vl_logic_vector(31 downto 0);
         b               : in     vl_logic_vector(31 downto 0);
         sel             : in     vl_logic;
-        z               : out    vl_logic_vector(31 downto 0);
-        FE_OFN3_jal_control_stage3: in     vl_logic;
-        FE_OFN0_jal_control_stage3: in     vl_logic
+        z               : out    vl_logic_vector(31 downto 0)
     );
 end my_mux_0;

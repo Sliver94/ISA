@@ -23,6 +23,7 @@ entity ID_EX_reg is
         stall_inserting : in     vl_logic;
         next_instruction_address_in: in     vl_logic_vector(31 downto 0);
         jal_control_in  : in     vl_logic;
+        absolute_value_in: in     vl_logic;
         RegWrite_out    : out    vl_logic;
         MemtoReg_out    : out    vl_logic;
         MemRead_out     : out    vl_logic;
@@ -39,6 +40,7 @@ entity ID_EX_reg is
         read_address1_out: out    vl_logic_vector(4 downto 0);
         read_address2_out: out    vl_logic_vector(4 downto 0);
         next_instruction_address_out: out    vl_logic_vector(31 downto 0);
-        jal_control_out : out    vl_logic
+        jal_control_out : out    vl_logic;
+        absolute_value_out: out    vl_logic
     );
 end ID_EX_reg;

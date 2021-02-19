@@ -1,4 +1,4 @@
-catch { setAnalysisMode -analysisType single }
+catch { setAnalysisMode -analysisType onChipVariation }
 catch { setAnalysisMode -clkSrcPath true }
 catch { setAnalysisMode -clockPropagation sdcControl }
 catch { setAnalysisMode -virtualIPO false }
@@ -7,6 +7,7 @@ catch { setOptMode -activeSetupViews { MyAnView } }
 catch { setOptMode -autoHoldViews { MyAnView } }
 catch { setOptMode -autoSetupViews { MyAnView} }
 catch { setOptMode -autoTDGRSetupViews { MyAnView} }
+catch { setOptMode -deleteInst true }
 catch { setOptMode -drcMargin 0 }
 catch { setOptMode -effort high }
 catch { setOptMode -fixCap true }
@@ -14,8 +15,12 @@ catch { setOptMode -fixFanoutLoad false }
 catch { setOptMode -fixTran true }
 catch { setOptMode -setupTargetSlack 0 }
 setExtractRCMode  -engine postRoute -total_c_th 5 -relative_c_th 0.03 -coupling_c_th 3 -minNetTermNrToBeInMem 50
+catch {setNanoRouteMode -quiet -drouteAntennaFactor 1.000000}
+catch {setNanoRouteMode -quiet -droutePostRouteSpreadWire "auto"}
+catch {setNanoRouteMode -quiet -drouteStartIteration 0}
 catch {setNanoRouteMode -quiet -extractThirdPartyCompatible false}
 catch {setNanoRouteMode -quiet -grouteExpTdStdDelay 10.100000}
+catch {setNanoRouteMode -quiet -routeExpPreserveConstraints true}
 catch {setNanoRouteMode -quiet -routeExpSignatureEco false}
 catch {setNanoRouteMode -quiet -routeWithSiDriven false}
 catch {setNanoRouteMode -quiet -routeWithSiPostRouteFix false}
@@ -45,4 +50,7 @@ catch { setAddRingMode -skip_via_on_wire_shape noshape }
 catch { setAddRingMode -stacked_via_bottom_layer metal1 }
 catch { setAddRingMode -stacked_via_top_layer metal10 }
 catch { setAddRingMode -via_using_exact_crossover_size true }
+catch { setHierMode -disableArt false }
+catch { setHierMode -reportPostRouteArtTiming false }
+catch { setHierMode -trialRouteHonorReadOnly false }
 catch { setSIMode -separate_delta_delay_on_data true }

@@ -3,7 +3,7 @@ m255
 cModel Technology
 d/home/isa04/Desktop/lab3/RISCV_ABS/sim_syn
 T_opt
-V@Y4k83OfHFG:MS28Ui4oG1
+VRj?=L]eSAQCiN7dK_WTGX3
 06 8 4 ./work RISCV_tb fast 0
 o-quiet -auto_acc_if_foreign -work work -L /software/dk/nangate45/verilog/msim6.2g -sdftyp /RISCV_tb/UUT=../netlist_syn/RISCV.sdf -suppress 1948
 tExplicit 1
@@ -278,7 +278,7 @@ r1
 31
 o-work ./work
 Einstruction_memory
-w1609263040
+w1613762633
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 8../RISCV_ABS/tb/instruction_memory.vhd
@@ -296,7 +296,7 @@ DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work instruction_memory KnBP=Phe3foiib?Rl5OG43
 l26
 L15
-V1Un@0V^mP3Y:3biA0JY2A1
+VJg4=mQ@7dcMDFXHk6FT=?1
 OE;C;6.2g;35
 31
 M2 ieee std_logic_1164
