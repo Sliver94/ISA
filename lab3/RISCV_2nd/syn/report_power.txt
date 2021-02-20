@@ -9,7 +9,7 @@ Report : power
         -analysis_effort low
 Design : RISCV
 Version: O-2018.06-SP4
-Date   : Thu Feb 18 14:57:39 2021
+Date   : Sat Feb 20 20:27:28 2021
 ****************************************
 
 
@@ -35,12 +35,12 @@ Power-specific unit information :
     Leakage Power Units = 1nW
 
 
-  Cell Internal Power  =   5.2839 mW   (92%)
-  Net Switching Power  = 454.4431 uW    (8%)
+  Cell Internal Power  =   5.2968 mW   (92%)
+  Net Switching Power  = 461.9243 uW    (8%)
                          ---------
-Total Dynamic Power    =   5.7383 mW  (100%)
+Total Dynamic Power    =   5.7587 mW  (100%)
 
-Cell Leakage Power     = 323.7562 uW
+Cell Leakage Power     = 325.4032 uW
 
 
                  Internal         Switching           Leakage            Total
@@ -49,10 +49,10 @@ Power Group      Power            Power               Power              Power  
 io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
-clock_network      0.7892          228.2094           43.0596          229.0417  (   3.78%)
-register       5.1626e+03           21.5172        1.2623e+05        5.3103e+03  (  87.60%)
+clock_network      0.7892          228.2094           43.0596          229.0417  (   3.76%)
+register       5.1745e+03           23.3046        1.2134e+05        5.3191e+03  (  87.42%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational    120.5043          204.7168        1.9748e+05          522.7029  (   8.62%)
+combinational    121.6234          210.4111        2.0402e+05          536.0584  (   8.81%)
 --------------------------------------------------------------------------------------------------
-Total          5.2839e+03 uW       454.4434 uW     3.2376e+05 nW     6.0621e+03 uW
+Total          5.2969e+03 uW       461.9251 uW     3.2540e+05 nW     6.0842e+03 uW
 1

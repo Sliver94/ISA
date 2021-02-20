@@ -1,0 +1,5 @@
+read_verilog -netlist ../netlist_syn/RISCV.v
+current_design RISCV
+read_saif -input ../saif_syn/RISCV_syn.saif -instance RISCV_tb/UUT -unit ns -scale 1
+create_clock -name MY_CLK clk
+report_power > report_power.txt

@@ -1,9 +1,9 @@
-vcom -93 -work ./work ../RISCV_1st/tb/clk_gen.vhd
-vcom -93 -work ./work ../RISCV_1st/tb/data_memory.vhd
-vcom -93 -work ./work ../RISCV_1st/tb/instruction_memory.vhd
-vlog -work ./work ../RISCV_1st/tb/RISCV_tb.v
-vlog -work ./work ../netlist/RISCV.v
-vsim -L /software/dk/nangate45/verilog/msim6.2g -sdftyp /RISCV_tb/UUT=../netlist/RISCV.sdf work.RISCV_tb
+vcom -93 -work ./work ../tb/clk_gen.vhd
+vcom -93 -work ./work ../tb/data_memory.vhd
+vcom -93 -work ./work ../tb/instruction_memory.vhd
+vlog -work ./work ../tb/RISCV_tb.v
+vlog -work ./work ../netlist_syn/RISCV.v
+vsim -L /software/dk/nangate45/verilog/msim6.2g -sdftyp /RISCV_tb/UUT=../netlist_syn/RISCV.sdf work.RISCV_tb
 vcd file ../vcd/RISCV_syn.vcd
 vcd add /RISCV_tb/UUT/*
 add wave sim:/RISCV_tb/*

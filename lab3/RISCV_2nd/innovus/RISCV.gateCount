@@ -1,16 +1,16 @@
 Gate area 0.7980 um^2
-Level 0 Module RISCV                                    Gates=     18253 Cells=    8518 Area=   14566.2 um^2
-Level 1 Module b2v_ABS_unit_inst                        Gates=197        Cells=157      Area=     157.7 um^2
-Level 1 Module b2v_address_adder_inst                   Gates=275        Cells=197      Area=     219.4 um^2
-Level 2 Module b2v_address_adder_inst/add_19            Gates=275        Cells=197      Area=     219.4 um^2
-Level 1 Module b2v_ALU_inst                             Gates=1066       Cells=703      Area=     850.9 um^2
-Level 2 Module b2v_ALU_inst/lt_46                       Gates=121        Cells=106      Area=      97.1 um^2
-Level 2 Module b2v_ALU_inst/r300                        Gates=240        Cells=187      Area=     192.1 um^2
-Level 1 Module b2v_Amux_forwarding_inst                 Gates=117        Cells=75       Area=      93.4 um^2
-Level 1 Module b2v_Bmux_forwarding_inst                 Gates=130        Cells=89       Area=     103.7 um^2
-Level 1 Module b2v_EX_MEM_inst                          Gates=870        Cells=333      Area=     694.3 um^2
-Level 1 Module b2v_ID_EX_reg_inst                       Gates=1512       Cells=575      Area=    1206.8 um^2
-Level 1 Module b2v_IF_ID_reg_inst                       Gates=777        Cells=296      Area=     620.3 um^2
-Level 1 Module b2v_MEM_WB_reg_inst                      Gates=576        Cells=220      Area=     460.2 um^2
+Level 0 Module RISCV                                    Gates=     18281 Cells=    8543 Area=   14588.2 um^2
+Level 1 Module b2v_ABS_unit_inst                        Gates=200        Cells=160      Area=     160.1 um^2
+Level 1 Module b2v_address_adder_inst                   Gates=267        Cells=186      Area=     213.6 um^2
+Level 2 Module b2v_address_adder_inst/add_18            Gates=267        Cells=186      Area=     213.6 um^2
+Level 1 Module b2v_ALU_inst                             Gates=1065       Cells=704      Area=     849.9 um^2
+Level 2 Module b2v_ALU_inst/lt_46                       Gates=122        Cells=107      Area=      97.9 um^2
+Level 2 Module b2v_ALU_inst/r300                        Gates=237        Cells=186      Area=     189.4 um^2
+Level 1 Module b2v_Amux_forwarding_inst                 Gates=124        Cells=84       Area=      99.2 um^2
+Level 1 Module b2v_Bmux_forwarding_inst                 Gates=118        Cells=76       Area=      94.2 um^2
+Level 1 Module b2v_EX_MEM_inst                          Gates=868        Cells=333      Area=     693.2 um^2
+Level 1 Module b2v_ID_EX_reg_inst                       Gates=1513       Cells=576      Area=    1207.9 um^2
+Level 1 Module b2v_IF_ID_reg_inst                       Gates=777        Cells=296      Area=     620.6 um^2
+Level 1 Module b2v_MEM_WB_reg_inst                      Gates=575        Cells=219      Area=     459.1 um^2
 Level 1 Module b2v_PC_inst                              Gates=261        Cells=100      Area=     208.3 um^2
-Level 1 Module b2v_registers_inst                       Gates=11531      Cells=5022     Area=    9201.7 um^2
+Level 1 Module b2v_registers_inst                       Gates=11539      Cells=5030     Area=    9208.4 um^2

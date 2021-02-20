@@ -1,20 +1,21 @@
-analyze -f vhdl -lib WORK ../RISCV_1st/src/my_mux32.vhd
-analyze -f vhdl -lib WORK ../RISCV_1st/src/IF_ID_reg.vhd
-analyze -f vhdl -lib WORK ../RISCV_1st/src/MEM_WB_reg.vhd
-analyze -f vhdl -lib WORK ../RISCV_1st/src/EX_MEM_reg.vhd
-analyze -f vhdl -lib WORK ../RISCV_1st/src/ID_EX_reg.vhd
-analyze -f vhdl -lib WORK ../RISCV_1st/src/stage1/PC.vhd
-analyze -f vhdl -lib WORK ../RISCV_1st/src/stage1/my_mux.vhd
-analyze -f vhdl -lib WORK ../RISCV_1st/src/stage1/adder_4.vhd
-analyze -f vhdl -lib WORK ../RISCV_1st/src/stage2/imm_gen.vhd
-analyze -f vhdl -lib WORK ../RISCV_1st/src/stage2/registers.vhd
-analyze -f vhdl -lib WORK ../RISCV_1st/src/stage2/control.vhd
-analyze -f vhdl -lib WORK ../RISCV_1st/src/stage2/forwarding_unit.vhd
-analyze -f vhdl -lib WORK ../RISCV_1st/src/stage2/hazard_detection_unit.vhd
-analyze -f vhdl -lib WORK ../RISCV_1st/src/stage2/branch_control_unit.vhd
-analyze -f vhdl -lib WORK ../RISCV_1st/src/stage3/address_adder.vhd
-analyze -f vhdl -lib WORK ../RISCV_1st/src/stage3/ALU.vhd
-analyze -f vhdl -lib WORK ../RISCV_1st/src/RISCV.vhd
+analyze -f vhdl -lib WORK ../src/my_mux.vhd
+analyze -f vhdl -lib WORK ../src/my_mux32.vhd
+analyze -f vhdl -lib WORK ../src/IF_ID_reg.vhd
+analyze -f vhdl -lib WORK ../src/MEM_WB_reg.vhd
+analyze -f vhdl -lib WORK ../src/EX_MEM_reg.vhd
+analyze -f vhdl -lib WORK ../src/ID_EX_reg.vhd
+analyze -f vhdl -lib WORK ../src/stage1/PC.vhd
+analyze -f vhdl -lib WORK ../src/stage1/my_mux.vhd
+analyze -f vhdl -lib WORK ../src/stage1/adder_4.vhd
+analyze -f vhdl -lib WORK ../src/stage2/imm_gen.vhd
+analyze -f vhdl -lib WORK ../src/stage2/registers.vhd
+analyze -f vhdl -lib WORK ../src/stage2/control.vhd
+analyze -f vhdl -lib WORK ../src/stage2/hazard_detection_unit.vhd
+analyze -f vhdl -lib WORK ../src/stage2/branch_control_unit.vhd
+analyze -f vhdl -lib WORK ../src/stage3/forwarding_unit.vhd
+analyze -f vhdl -lib WORK ../src/stage3/address_adder.vhd
+analyze -f vhdl -lib WORK ../src/stage3/ALU.vhd
+analyze -f vhdl -lib WORK ../src/RISCV.vhd
 
 set power_preserve_rtl_hier_names true
 ungroup -all -flatten
