@@ -1,0 +1,3 @@
+source init_questa10.7c
+vlog -sv ../tb/top.sv
+vsim top

@@ -1,0 +1,7 @@
+source init_questa10.7c
+vcom -93 -work ./work ../src/MBE/BEU.vhd
+vcom -93 -work ./work ../src/MBE/half_adder.vhd
+vcom -93 -work ./work ../src/MBE/full_adder.vhd
+vcom -93 -work ./work ../src/MBE/MBE.vhd
+vlog -sv ../tb/top.sv
+vsim top
