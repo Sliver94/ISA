@@ -1,0 +1,21 @@
+source init_questa10.7c
+
+vcom -93 -work ./work ../src/fpuvhdl/common/fpnormalize_fpnormalize.vhd
+vcom -93 -work ./work ../src/fpuvhdl/common/fpround_fpround.vhd
+vcom -93 -work ./work ../src/fpuvhdl/common/packfp_packfp.vhd
+vcom -93 -work ./work ../src/fpuvhdl/common/unpackfp_unpackfp.vhd
+
+vcom -93 -work ./work ../src/fpuvhdl/multiplier/MBE/BEU.vhd
+vcom -93 -work ./work ../src/fpuvhdl/multiplier/MBE/half_adder.vhd
+vcom -93 -work ./work ../src/fpuvhdl/multiplier/MBE/full_adder.vhd
+vcom -93 -work ./work ../src/fpuvhdl/multiplier/MBE/MBE.vhd
+
+vcom -93 -work ./work ../src/fpuvhdl/multiplier/my_register.vhd
+vcom -93 -work ./work ../src/fpuvhdl/multiplier/fpmul_stage1_struct.vhd
+vcom -93 -work ./work ../src/fpuvhdl/multiplier/fpmul_stage2_struct_MBE_double_pipe.vhd
+vcom -93 -work ./work ../src/fpuvhdl/multiplier/fpmul_stage3_struct.vhd
+vcom -93 -work ./work ../src/fpuvhdl/multiplier/fpmul_stage4_struct.vhd
+vcom -93 -work ./work ../src/fpuvhdl/multiplier/fpmul_pipeline_reg_input.vhd
+
+vlog -sv ../tb/top.sv
+vsim top
